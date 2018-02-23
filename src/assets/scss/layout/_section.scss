@@ -1,0 +1,81 @@
+// Section
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Weight: 5
+//
+// Styleguide: Layout.Section
+
+.box1{
+  background: lightblue;
+
+}
+.box2{
+  background: lightgreen;
+
+}
+.box3{
+  background: lightpink;
+
+}
+.box4{
+  background: lightsalmon;
+
+}
+.box5{
+  background: lightgoldenrodyellow;
+
+}
+// ==========================================================================
+// Section UI KIT
+// ==========================================================================
+$article-section--size:9; 
+$article-gutter-output:true; 
+$gutters:20px;
+$gutter-type: padding;
+$article-gutter-position:right left; 
+$breakpoint: null;
+$vertical:false;
+$nav-section--vertical: false;
+.article-section{
+  // to expand over hero image: add margin-top -100px 
+  background: $white;
+  @include xy-cell($article-section--size, $article-gutter-output, $gutters, $gutter-type, $article-gutter-position, $breakpoint, $vertical);
+  @include breakpoint(medium down) {
+    @include xy-cell(12, $article-gutter-output, $gutters, $gutter-type, $article-gutter-position, $breakpoint, $vertical);
+  }
+}
+// ==========================================================================
+// nav-section
+// ==========================================================================
+$nav-gutter-output:false; 
+$nav-gutters:0px;
+$nav-gutter-type:margin;
+$nav-gutter-position:right left; 
+$nav-breakpoint: null;
+$nav-vertical:false;
+$nav-section--vertical: false;
+$navsection--size: 3;
+.nav-section{
+  background: palette(grey, xx-light);
+  @include xy-cell($navsection--size, $nav-gutter-output, $nav-gutters, $nav-gutter-type, $nav-gutter-position, $nav-breakpoint, $nav-section--vertical);
+  @include breakpoint(medium down) {
+    @include xy-cell(12, $nav-gutter-output, $nav-gutters, $nav-gutter-type, $nav-gutter-position, $nav-breakpoint, $nav-section--vertical);
+  }
+}
+// ==========================================================================
+// grid-section
+// ==========================================================================
+$grid-section--size:12; 
+$grid-gutter-output:true; 
+$grid-gutters:0px;
+$grid-gutter-type:margin;
+$grid-gutter-position:right left; 
+$grid-breakpoint:null;
+$grid-vertical:false;
+$grid-section--vertical: false;
+.grid-section{
+  background: $white;
+   @include xy-cell($grid-section--size, $grid-gutter-output, $grid-gutters, $grid-gutter-type, $grid-gutter-position, $grid-breakpoint, $grid-section--vertical);
+}

@@ -1,0 +1,17 @@
+.b-lazy {
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(-110%);
+  transition: transform 1000ms cubic-bezier(0, 1, 0.5, 1),
+              opacity 1000ms ease-in-out;
+  }
+.b-lazy.b-loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+.image-wrapper {
+    // Adding a loader and background color. The user will see it
+// if the image is loading slow.
+    background: palette(grey,xx-light) url('`#{$path--rel}`/images/ring-loader.gif') center center no-repeat;
+    width: 100%
+}

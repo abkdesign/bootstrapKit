@@ -1,0 +1,184 @@
+// Mixins
+//
+// Weight: 2
+//
+// Styleguide: Tools.Mixins
+
+
+// BEM selectors
+//
+// @include e(element){ css/scss styles inside} need to be a child of a parent class.
+// It Will Look like .test__element
+//
+//
+// $el-name - what ever name you want the element to have
+//
+// Weight: 1
+//
+// Styleguide: Tools.Mixins.BEM
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+
+
+// bg-colors
+//
+// Generate modifier color classes @include bg-colors($ui-colors);	
+//
+// @include bg-colors($ui-colors);
+// 
+// $ui-colors - color maps from config
+//
+// Weight: 3
+//
+// Styleguide: Tools.Mixins.bg-colors
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+
+//  Pseudo Elements
+//
+// Generating :before or :after pseudo-element shapes 	
+//
+// @include p-el(before, 25px, 3px)
+//
+// $el - before
+// $el-Width - use ems pr rems to adjust width
+// $el-Height - use ems pr rems to adjust Height
+//
+// Weight: 2
+//
+// Styleguide: Tools.Mixins.Pseudo-Elements
+@mixin p-el(
+	$el,
+	$el-w: null,
+	$el-h: null) {
+	@if $el == "before" or $el == "after" { 
+	  &:#{$el} {
+		  @extend %pseudos;
+		  width: $el-w;
+	  	height: $el-h;
+	    @content;
+	  }
+	} 
+	@else {
+    @error "`#{$el}` is not a valid pseudo-element.";
+	}
+}
+
+// Image replacement
+@mixin img-replace($img, $w, $h, $disp: block) {
+	background-image: url('#{$path--rel}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $disp;
+}
+
+// Responsive-Ratio
+//
+// We use this for creating scalable elements (usually images / background images) that maintain a ratio.
+// So to use this you could write the below and your div would have a ratio commonly utilised by video.
+//
+//@include Responsive-Ratio(16,9)
+//
+// $ratio1 - 16
+// $ratio2 - 9
+//
+// Weight: 5
+//
+// Styleguide: Tools.Mixins.Responsive-Ratio
+@mixin responsive-ratio($x,
+$y,
+$pseudo: false) {
+    $padding: unquote( ( $y / $x) * 100 + '%');
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    }
+    @else {
+        padding-top: $padding;
+    }
+}
+
+// doubly($margin: 1em)
+//
+// Creates a linear gradient background, from top to bottom.
+//
+// Compatibility untested.
+//
+// $Margin - spacing in rems or ems
+//
+// Weight: 5
+//
+// Styleguide Tools.mixins.doubly
+@mixin doubly($margin: 1em) {
+	& + & {
+	  margin-left: $margin;
+    @content;
+	}
+}
+
+
+
+
+// ellipsis
+//
+// Creates a elipses
+//
+// Compatibility untested.
+//
+// $max-width - use rems or ems
+//
+// Weight: 5
+//
+// Styleguide Tools.mixins.ellipsis
+@mixin ellipsis ($max-width){
+  display: inline-block;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// create a circle
+@mixin circle($size){
+  display: block;
+  text-align: center;
+  width: $size;
+  height: $size;
+  border-radius: $size / 2 + 0px;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  padding-bottom: ($height / $width) * 100%;
+  img,
+  video,
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

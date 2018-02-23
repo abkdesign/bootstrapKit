@@ -1,0 +1,47 @@
+// Wrapper
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Markup (define the markup to be used in your styleguide):
+// <div class="main-container">main-container</<div>
+//
+// Weight: 4
+//
+// Styleguide: Layout.Wrapper
+
+// ==========================================================================
+// Wrapper UI KIT
+// ==========================================================================
+$vertical: true;
+$nested: true;
+$gutters: rem(15px);
+$breakpoint: breakpoints('small');
+$include-base: true;
+$wrap: false;
+$direction: vertical;
+.main-wrapper{
+  background: palette(grey, x-dark);
+   //@include xy-grid;
+   //@extend .grid-margin-y;
+   @include xy-grid-frame($vertical, $nested, $gutters, $breakpoint, $include-base);
+   @include xy-grid($direction, $wrap);
+   min-height: 100vh;
+}
+.main-container{
+  @include xy-grid-container($grid-container);
+  @include xy-grid;
+  width: 100%;
+  z-index: 1;
+  flex: 1 1 auto;
+  transition: all 0.25s ease-out;
+  @media print, screen and (min-width: 40em) {
+     padding: 0;
+  }
+  @include xy-gutters(0, padding, right left, false);
+ 
+  // small devices
+  @include breakpoint(small only) {
+    @include xy-gutters(0, margin, right left, false);
+  }
+}

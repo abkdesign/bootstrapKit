@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 76.97 70.5" xmlns="http://www.w3.org/2000/svg">
+<style><![CDATA[ */
+  .svg__right-head{
+  fill:#0a0300;
+    opacity:0.5;
+}
+.svg__left-head,.svg__knob{
+  fill:#333;
+}
+.svg__face{fill:#b2aa96;}
+.svg__nose{
+  opacity:0.2;
+}
+.svg_eyes{
+  fill: #1E1E1E; 
+}
+    /* ]]>*/</style>
+<g class="svg__ninja">
+<path class="svg__right-head" d="M41.74 0h-.08v70.5h.08a35.24 35.24 0 0 0 0-70.5z"/>
+<path class="svg__left-head" d="M41.58 0s-2.25-.07.08 0 1.48 58.82 0 70.47h-.08a35.24 35.24 0 0 1 0-70.47z"/>
+<path class="svg__face" d="M15 30.4v-.05h54.25v.05c0 12.92-12.15 23.4-27.13 23.4S15 43.32 15 30.4z"/>
+<path class="svg__nose" d="M42.46 55.44V41.82c0-.14-3.36 11.52-3.54 12.28.84 1.27 3.08 7.26 3.54 1.34z"/>
+<circle class="svg_eyes" cx="31.86" cy="37.59" r="3.15"/>
+<circle class="svg_eyes" cx="52.91" cy="37.59" r="3.15"/>
+<path class="svg__knob" d="M13 24.68H1a1 1 0 0 1-1-1.21l1.15-7.26a1 1 0 0 1 1.42-.81l7.9 3.11a1 1 0 0 0 1.24-1.58C9.37 13.66 6 8.69 6.32 7.77a79 79 0 0 1 4.6-7.26 1 1 0 0 1 1.91.49l1.48 14.7a1 1 0 0 0 .73.9l.43.13a1 1 0 0 1 .73 1.16l-1 6.07a1 1 0 0 1-1.2.87l-.89-.14z"/>
+</g>
+</svg>

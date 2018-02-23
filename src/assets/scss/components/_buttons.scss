@@ -1,0 +1,108 @@
+// Buttons
+//
+// Various button styles. (description, just as before)
+//
+// Markup: html/button.html
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .button--small - A small button.
+// .button--large - A large button.
+//
+// Styleguide Components.button (organization, just as before)
+
+.button {
+  padding: 1em 2em;
+  margin: .5em;
+  display: inline-block;
+  font-size: .9em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f56476;
+  background-color: #fff;
+  border: 2px solid #f56476;
+  transition: .2s color, .2s background-color, .2s border-color;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #f56476;
+}
+
+.button:focus {
+  color: #3ddc97;
+  border-color: currentColor;
+}
+
+.button--small {
+  font-size: .5em;
+}
+
+.button--large {
+  font-size: 1.5em;
+}
+
+.btn {
+  @include bg-colors($ui-colors);
+  align-self: center;
+  margin-top: auto;
+  @include m(info){
+    max-width: 200px;
+    align-self: flex-end;
+  }
+}
+.btn--info{
+  max-width: 200px;
+  align-self: flex-end;
+  @include breakpoint(small){
+    margin-bottom: 0px !important;
+  }
+}
+[class^="btn--"] {
+  @extend %center-align;
+  @extend %btn;
+  font-weight: $font-weight--bold;
+  margin-bottom: em(20px, 14px);
+  @include breakpoint(small) {
+    width: 100%;
+  }
+  @include breakpoint(medium) { 
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+    }
+  }
+
+.btn__product{
+  @extend %center-align;
+  @extend %btn;
+  font-size: 13px;
+  text-transform: uppercase;
+  vertical-align: top;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: $grey;
+  opacity: 1;
+  height: 30px;
+  white-space: nowrap;
+}
+
+$padding: rem-calv(5);
+$bg: palette(primary, base);
+$radius: $global-radius;
+$full-width:true;
+$disabled:false;
+.button-header {
+  @include button(
+
+    $padding,
+
+    $bg,
+    $radius,
+
+    $full-width,
+     $disabled
+  );
+  margin: 10px 0px;
+  width: 200px;
+}

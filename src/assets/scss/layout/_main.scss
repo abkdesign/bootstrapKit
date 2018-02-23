@@ -1,0 +1,34 @@
+// Main
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Weight: 4
+//
+// Styleguide: Layout.Main
+
+// ==========================================================================
+// Main UI KIT
+// ==========================================================================
+$vertical:true;
+$size:auto; 
+$gutter-output:true;
+$gutters:20px;
+$gutter-type:margin;
+$gutter-position:right left; 
+$breakpoint: 0;
+$vertical:false;
+.main-content{
+  margin-top:em($menu-height);
+  position: relative;
+  @include xy-cell-block-container;
+  @include xy-cell(shrink);
+  @include breakpoint(small only){
+    @include xy-gutters(0, margin, right left, false);
+  }
+  transition: all 0.25s ease-out;
+  //@include xy-cell($size, $gutter-output, $gutters, $gutter-type, $breakpoint, $vertical);
+  //@include xy-grid-layout($n, $selector, $gutter-output, $gutters, $gutter-type, $gutter-position, $vertical);
+  background: palette(grey, x-light);
+      min-height: 100vh;
+}

@@ -1,0 +1,65 @@
+// /* Simple show/hide */
+//  .help-panel {
+//      .help-panel-body {
+//          display: none;
+//      }
+//      &.is-expanded {
+//          .help-panel-body {
+//              display: block;
+//          }
+//      }
+//  }
+
+// /* Simple CSS transition of max-height */
+// .help-panel {
+//     .help-panel-collapse {
+//         max-height: 0;
+//         overflow: hidden;
+//         transition: max-height 0.5s cubic-bezier(.525,.66,.495,1.4);  
+//     }
+//     &.is-expanded {
+//         .help-panel-collapse {
+//             max-height: 200px
+//         }
+//     }
+// }
+
+/* JS calculated height - the most accurate */
+/*.help-panel {
+    .help-panel-heading {
+        /*background: #eeeeef;
+        height: 30px;
+    }
+    .help-panel-collapse {
+        overflow: hidden;
+        transition: height 0.3s ease-out;  
+    }
+    .help-panel-body {
+        border: none !important;
+    }
+    h2 {margin-top: 5px !important;}
+}*/
+.#{$themeVar}-help-btn{
+    right: 25px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: absolute;
+}
+
+
+.#{$themeVar}-help-panel {
+    overflow: hidden;
+    .#{$themeVar}-help-panel-heading {
+        cursor: pointer;
+        //background: #eeeeef;
+        height: 30px;
+    }
+    .#{$themeVar}-help-panel-collapse {
+        overflow: hidden;
+        transition: height 0.3s ease-out;  
+    }
+    .#{$themeVar}-help-panel-body {
+        border: none !important;
+    }
+    h2 {margin-top: 5px !important;}
+}

@@ -1,0 +1,38 @@
+// Panel
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Weight: 4
+//
+// Styleguide: Layout.Panel
+
+// ==========================================================================
+// Panels
+// ==========================================================================
+
+.panel {
+  @extend %panel-default;
+  
+  @include m(centered) {
+    @extend %panel-default;
+    @extend %center-align;    
+  }
+  
+  @include m(padded) {
+    @extend %panel-padding;
+    
+    @include m(centered) {
+      @extend %center-align;
+	    @extend %panel-padding;
+    }
+  }
+  @include m(padded-all) {
+    @extend %panel-padding-all;
+
+    @include m(centered) {
+      @extend %center-align;
+      @extend %panel-padding;
+    }
+  }
+}

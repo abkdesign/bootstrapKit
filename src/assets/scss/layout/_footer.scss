@@ -1,0 +1,51 @@
+// Footer
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Weight: 4
+//
+// Styleguide: Layout.Footer
+
+.site-footer {
+  background:#fff;
+
+  text-align: center;
+  margin-bottom: em($mobile-menu-height);
+}
+.footer-content{
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  @include e(container){
+    margin-bottom: em($mobile-menu-height/2);
+  }
+}
+// ==========================================================================
+// FOOTER UI KIT
+// ==========================================================================
+.main-footer{
+  @include xy-cell-block-container;
+  @include xy-cell(shrink);
+  background: palette(grey, light);
+  height: 150px;
+  @include e(grid-container){
+    @include xy-grid-container($grid-container);
+    width: 100%;
+  }
+  @include e(grid){
+    @include xy-grid;
+  }
+  @include e(cell){
+    @include xy-cell(3);
+    background:magenta;
+    @include m(social){
+      @include xy-cell(4);
+      background: magenta
+    }
+      @include m(submenu){
+      @include xy-cell(5);
+      background: magenta
+    }
+  }
+}

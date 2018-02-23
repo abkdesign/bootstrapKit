@@ -1,0 +1,73 @@
+// Functions
+//
+// Weight: 2
+//
+// Styleguide: Tools.Functions
+
+// Import if Google Fonts URL is defined
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// Calculate em values
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+
+// Palette
+//
+// Palette is used with color like grey and a shade/brightness amount - see config
+//
+// Markup: palette(grey, x-light);
+//
+// Weight: 1
+//
+// Styleguide: Tools.Functions.Palette
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($color-palettes, $palette), $shade);
+
+}
+// theme colors
+//
+// Palette is used with color like grey and a shade/brightness amount - see config
+//
+// Markup: palette(grey, x-light);
+//
+// Weight: 1
+//
+// Styleguide: Tools.Functions.themeColors
+@function themeColor($color) {
+	@return map-get($theme-colors, $color);
+}
+
+// z-index
+//
+// hen where ever you're wanting to use a z-index value, name it the same as 
+// your class and add in it into your variables/setting file, like below. You'll never have a "z-index: 99999999;" headache again.
+//
+// Markup: .site-header {    z-index: z('site-header');}
+//
+// Weight: 1
+//
+// Styleguide: Tools.Functions.z-index
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    }
+    @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: ( "outdated-browser",
+"modal",
+"site-header",
+"page-wrapper",
+"site-footer");
+
+// Set the rem value based on px input
+@function rem($size){
+  $remSize: $size/$base__font-size;
+  @return #{$remSize}rem;
+}

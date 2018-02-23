@@ -1,0 +1,182 @@
+// Navigation
+//
+// Includes all the public mixins and helper functions.
+// These globally-available tools should make our development flow easier.
+//
+// Weight: 4
+//
+// Styleguide: Layout.Navigation
+
+// ==========================================================================
+// Nav
+// ==========================================================================
+$nav-direction:horizontal;
+$nav-wrap:true;
+.main-nav{
+ @include xy-grid($nav-direction, $nav-wrap);
+ background: palette(primary, x-light);
+ @include xy-gutters($gutter-position: left right);
+ @include breakpoint(medium down) {
+    visibility: collapse;
+    padding: 0;
+   height: 0;
+   margin: 0;
+    line-height: 0;
+    order: 4;
+     display: block;
+    width: 100vw;
+    margin-left: -20px;
+        padding: 6% 0;
+    background: #1e1e1e;
+  }
+  @include e(item){
+    a{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      @include breakpoint(medium down){
+        display: block;
+        padding: 3% 16%;
+        color: #fff;
+        line-height: 1;
+      }
+    }
+  }
+  @include m(mobile){
+    align-self: center;
+    @include xy-cell(shrink);
+    @include breakpoint(large up) {
+
+			visibility: collapse;
+			padding: 0;
+			height: 0;
+			margin: 0;
+      line-height: 0;
+      display: none;
+    }
+    @include breakpoint(medium down){
+      flex: 1;
+    }
+  }
+}
+/* ---- Navigation ---- */
+.mobile-nav{
+  z-index: 900;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: em($mobile-menu-height);
+  @include e(navbar){
+    display: flex;
+    width: 100%;
+    background: pink;
+  }
+  @include e(icon){
+     position: relative;
+     flex: 4;
+     height: 50px;
+     @include m(circle){
+       background: mediumpurple;
+       color:#eeeefd;
+       @include circle(70px);
+       position: absolute;
+       left: 50%;
+       margin-left: -35px;
+       bottom: 8px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+       user-select: none;
+     }
+  }
+  @include e(list){
+    background: #eeeefd;
+    height: em(50px);
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    display: flex;
+    @include e(item){
+      display: flex;
+      flex-direction: column;
+      flex: 4;
+      font-size: rem(10px);
+      user-select: none;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.8;
+      }
+      & *{
+        width: 100%;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+.nav {
+  z-index: 100;
+  flex: 3 3;
+  background: #eeeeee;
+  /* mobile setup*/
+  @include breakpoint(small){
+    flex-grow: 1;
+    flex: 100%;
+    margin-top: 0;
+  }
+
+  @include e(list){
+    //normal
+    z-index: 95;
+    display: flex;
+
+    //breakpoint
+    @include breakpoint(medium){
+       flex-wrap: wrap;
+    }
+    @include breakpoint(small){
+     flex-wrap: wrap;
+    }
+    @include e(item){
+      //normal
+      z-index: 95;
+      flex:3;
+      //breakpoint
+      @include breakpoint(medium){
+        flex: 1 1 50%
+      }
+      @include breakpoint(small){
+        flex: 1 1 50%;
+      }
+
+      a{
+        color:white;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background:rgb(186, 120, 120);
+        padding:20px 5px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        transition:all 0.5s;
+      }
+      @include m(social){
+        flex:1;
+        color:white;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background:rgba(0,0,0,0.2);
+        padding:20px 5px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        transition:all 0.5s;
+      }
+    }
+  }
+}

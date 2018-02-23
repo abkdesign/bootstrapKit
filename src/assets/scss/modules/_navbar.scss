@@ -1,0 +1,50 @@
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+.navbar {	
+	position: relative;
+	height: em($menu-height);
+	width: 100%;
+	display: flex;
+	margin-top: 0;
+	flex-wrap: wrap;
+	background: magenta;
+
+	@include breakpoint(medium) {
+		margin-bottom: 0;
+	}
+	@include breakpoint(small){
+		flex-grow: 1;
+		order: 3;
+		left: 0;
+		flex: 100%;
+		width: 100%;
+		height: em(46px);
+	}
+
+}
+// ==========================================================================
+// Site Branding
+// ==========================================================================
+
+.site-branding{
+  flex: 1 1;
+  display: flex;
+  width: 55px;
+	align-items: center;
+	justify-content: center;
+  background: $color-primary;
+	h1{
+		font-size: 20px;
+		margin: 0;
+	}
+	.site-description{
+		visibility: hidden;
+		display: none;
+		margin: 0;
+	}
+  @include breakpoint(small){
+	  height: 100%;
+  }
+}

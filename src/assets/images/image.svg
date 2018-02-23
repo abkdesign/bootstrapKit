@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.97 70.5">
+  <title>ninja</title>
+  <style>
+    .svg__right-head{
+    fill:#0a0300;
+      opacity:0.5;
+    }
+    .svg__left-head,.svg__knob{
+      fill:#333;
+    }
+
+    .svg__face{fill:#b2aa96;}
+    .svg__nose{
+      opacity:0.2;
+    }
+    .svg_eyes{
+      fill: #1E1E1E; 
+    }
+  </style>
+  <g id="svg-ninja">
+    <animateTransform 
+       attributeName="transform" 
+       dur="2.5s" 
+       type="translate" 
+       values="0 20 ; 0 -15; 0 20" 
+       repeatCount="indefinite" 
+       begin="0.1"/>
+   <g class="svg__ninja">
+        <path class="svg__right-head" d="M41.74,0h-.08V70.5h.08A35.24,35.24,0,0,0,41.74,0Z">
+          <animate
+            attributeName="opacity"
+            dur="3s"
+            values="0.4;1;0.4"
+            repeatCount="indefinite" 
+            begin="0.2"/>     
+        </path>
+        <path class="svg__left-head" d="M41.58,0s-2.25-.07.08,0,1.48,58.82,0,70.47h-.08A35.24,35.24,0,0,1,41.58,0Z">
+           <animate 
+            attributeType="CSS"    
+            attributeName="opacity"
+            dur="3s"
+            values="0.4;1;0.4"
+            repeatCount="indefinite"
+            begin="0.4" />
+        </path>
+        <path class="svg__face" d="M15,30.4s0,0,0-.05H69.25s0,0,0,.05c0,12.92-12.15,23.4-27.13,23.4S15,43.32,15,30.4Z"></path>
+        <path class="svg__nose" d="M42.46,55.44c0-1.79,0-13.48,0-13.62S39.1,53.34,38.92,54.1C39.76,55.37,42,61.36,42.46,55.44Z"></path>
+        <path d="M47.53,71.86">
+          
+        </path>
+        <circle id="svg-ninja__eye--left" class="svg_eyes" cx="31.86" cy="37.59" r="3.15"/>
+        <circle id="svg-ninja__eye--right" class="svg_eyes" cx="52.91" cy="37.59" r="3.15"/>
+        <path class="svg__knob" d="M13,24.68H1a1,1,0,0,1-1-1.21l1.15-7.26a1,1,0,0,1,1.42-.81l7.9,3.11a1,1,0,0,0,1.24-1.58C9.37,13.66,6,8.69,6.32,7.77A79,79,0,0,1,10.92.51,1,1,0,0,1,12.83,1l1.48,14.7a1,1,0,0,0,.73.9l.43.13a1,1,0,0,1,.73,1.16l-1,6.07a1,1,0,0,1-1.2.87l-.89-.14Z">
+          <animate 
+            attributeType="CSS"    
+            attributeName="opacity"
+            dur="3s"
+            values="0.4;1;0.4"
+            repeatCount="indefinite"
+            begin="0.4" />
+        </path>
+      </g>
+  </g>
+</svg>
