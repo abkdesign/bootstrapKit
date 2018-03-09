@@ -1,0 +1,24 @@
+.dashboard-card{
+  @extend %card-default;
+  padding: 1rem;
+  @include e(icon){
+    width: 30px;
+  }
+  @include e(mediaHeader){
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $gray-200;
+  }
+  @include e(mediaHeaderIcon){
+    color: $color-primary;
+    margin-right: 5px;
+  }
+  @include e(media){
+    border-bottom: 1px solid $gray-300;
+  }
+  @include e(mediaBox){
+    padding-bottom: 1rem !important;
+    font-size: 80%;
+    font-weight: 400;
+  }
+}

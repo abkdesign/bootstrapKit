@@ -16,7 +16,7 @@ const extractSass = new ExtractTextPlugin({
 });
 /*Clean up build folder*/ 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const cleanBuildFolder = new CleanWebpackPlugin(['build'])
+const cleanBuildFolder = new CleanWebpackPlugin(['dest'], { root: path.resolve(__dirname , '..'), verbose: true })
 // split common code into other files.
 const commonCunk = new webpack.optimize.CommonsChunkPlugin({
 	name: "vendor",
@@ -27,11 +27,11 @@ const commonCunk = new webpack.optimize.CommonsChunkPlugin({
 module.exports = env => {
 	return{
 		entry: {
-			vendor: ['babel-polyfill','lodash','boostrap'],
+			vendor: ['babel-polyfill','lodash','bootstrap'],
 			app: './src/index.js'
 		},
 		output: {
-			path: path.resolve(__dirname, 'build/'),
+			path: path.resolve(__dirname, '../dest/'),
 			//publicPath: '/build/',
 			filename: './js/[name]_bundle.js'
 		},
@@ -100,12 +100,7 @@ module.exports = env => {
 		plugins: [
 			cleanBuildFolder,
 			extractSass,
-			commonCunk,
-			new HtmlWebpackPlugin({
-				template: './src/index.html',
-				filename: 'index.html',
-				inject: 'body'
-			})
+			commonCunk
 		]
 }
 };

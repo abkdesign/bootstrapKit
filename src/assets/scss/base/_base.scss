@@ -15,52 +15,46 @@
 	box-sizing: border-box;
 }
 html{
-	overflow-y: scroll; 
+	//overflow-y: scroll; 
 }
 body {
-  color: palette(grey);
-  font-size: $base__font-size;
-  font-family: $font-family--primary;
-  line-height: ($base__line/$base__font-size);
-  min-height: 100vh;
-
+  // color: palette(grey);
+  // font-size: $base__font-size;
+  // font-family: $font-family--primary;
+  // line-height: ($base__line/$base__font-size);
+  min-height: 100%;
 }
 
 // Text
 
-h1 {
-	@extend %hdln-prim;
-}
+// h1 {
+// 	@extend %hdln-prim;
+// }
 
-h2 {
-	@extend %hdln-sec;
-}
+// h2 {
+// 	@extend %hdln-sec;
+// }
 
-h3 {
-	font-size: em(31px);
-}
+// h3 {
+// 	font-size: em(31px);
+// }
 
-h4 {
-	margin-top: em(22px, 14px);
-	margin-bottom: em(32px, 14px);
-	color: palette(grey, x-light);
-	text-transform: uppercase;
-	letter-spacing: $letter-space;
-	font-weight: $font-weight--medium;
-	font-size: em(22px);
-}
+// h4 {
+// 	margin-top: em(22px, 14px);
+// 	margin-bottom: em(32px, 14px);
+// 	color: palette(grey, x-light);
+// 	text-transform: uppercase;
+// 	letter-spacing: $letter-space;
+// 	font-weight: $font-weight--medium;
+// 	font-size: em(22px);
+// }
 
 a {
-	color: palette(grey, dark);
-	text-decoration: none;
-	font-weight: $font-weight--medium;
+
 }
 
 p {
-	margin: 0 0 em(30px, 18px);
-	font-weight: $font-weight--light;
-	font-size: em(18px);
-	line-height: (27px/18px);
+
 }
 
 blockquote {
@@ -93,12 +87,6 @@ li {
 // Images
 
 img {
-  margin-bottom: em(24px);
-  max-width: 100%;
-	height: auto;
-  transition: all 0.25s ease-out;
-}
-a img:hover{
 
 }
 // Form elements
@@ -127,13 +115,10 @@ button {
 
 // base Layout
 header{
-	justify-content: space-between;
+	
 }
 section{
 
-}
-section:first-of-type {
-    padding-top: 0;
 }
 footer {
 

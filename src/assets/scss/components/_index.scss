@@ -7,8 +7,9 @@
 //
 // Styleguide: Components
 
+@import 'extends';
 // icons
-//@import 'icons';
+@import 'icons';
 
 // Buttons
 //@import 'buttons';
@@ -24,6 +25,20 @@
 // Headlines
 
 //@import 'headlines';
-
+@import 'dashboard-card';
 @import 'input';
 @import 'accordion';
+@import 'toDo-card';
+@import 'icon-list';
+@import 'card-category';
+@import 'field-list';
+@import 'category-types';
+@import 'activity-card';
+
+// custom elements
+@import 'timeline';
+
+// boostrap
+@import 'bootstrap/dropdown';
+@import 'bootstrap/modal';
+@import 'bootstrap/buttons';

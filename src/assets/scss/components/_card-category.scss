@@ -1,0 +1,54 @@
+.card-category{
+  @include e(subheader){
+    width: 100%;
+    background: $white;
+    padding: rem(15px) rem(10px);
+    color:$marine;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid $gray-200;
+  }
+  @include e(subheder-icon){
+    color: $color-primary;
+    font-size: rem(20px);
+    margin-right: em(10px);
+  }
+  @include e(subbody){
+    width: 100%;
+    padding: em(10px) em(10px);
+  }
+  @include e(subfooter){
+    width: 100%;
+    //background: $gray-200;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    padding: em(15px) em(10px);
+  }
+  @include e(body){ 
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  @include e(topic){
+    font-size: rem(18px);
+    font-weight: $font-weight--medium;
+    color: palette(black,light); 
+    margin: 0px; 
+  }
+  @include e(description){
+    font-size: rem(16px);
+    color: palette(grey,dark);
+  }
+  @include e(subcategory){
+    margin-bottom: em(30px);
+    background: #fbfbfb;
+    border: 1px solid #eeeeee;
+  }
+}

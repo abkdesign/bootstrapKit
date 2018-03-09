@@ -17,9 +17,9 @@
 // $lightrosa      - #997F85
 //
 // Styleguide Tools.colors
-
+$font-url--google:'https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,900';
 // Font Stacks
-$font-family--primary    : 'proxima-nova', sans-serif;
+$font-family--primary    : 'Source Sans Pro', sans-serif;
 $font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
@@ -53,7 +53,9 @@ $gray-900: #212529 !default;
 $theme-light: #6ec6ff;
 $theme-main: #2196f3;
 $theme-dark: #0069c0;
-
+$theme-body: #edf0f7;
+$bg-blue: #fbfdff;
+$border-blue:#b5d7ea;
 $brown : #554738;
 $primebrown : #4D383D;
 $fountain-blue  : #52bab3;
@@ -162,9 +164,13 @@ $colorAdjust: mix($color-primary, $color-secondary, 25%);
 $colorComp: complement($color-primary);
 $colorTransp: transparentize($colorAdjust,0.5);
 
+//boxShadow
+$panel-boxShadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 2px 0 rgba(0,0,0,.12);
+
 $themeVar: 'ComC';
 // menu configs
-$menu-height:65px;
+$menu-height: 65px;
+$header-height:65px;
 $mobile-menu-height:50px;
 // footer configs
 $footer-margin-b: $mobile-menu-height;
@@ -183,3 +189,6 @@ $trns-duration  : .3s;
 
 // Path to Assets
 $path--rel      : "../images";
+
+// Fontawesome
+$fa-font-path:   "../webfonts";

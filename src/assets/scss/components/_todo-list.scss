@@ -1,0 +1,56 @@
+.todo-list{
+  @include make-col-ready();
+  @include make-col(6);
+  margin: 1rem 0px;
+  @include e(header){
+    padding: rem(8px) rem(14px);
+    height: em(35px);
+    diplay:flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $gray-200;
+    h6{
+      display: inline-block;
+      color: lighten($marine, 20%);
+    }
+  }
+  @include e(headerIcon){
+    color: $warning;
+    margin-right: 5px;
+  }
+  @include e(body){
+    @extend %card-default;
+    height: 100%;
+  }
+  @include e(list){
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  @include e(item){
+    @include make-col(6);
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid $gray-300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @include e(icon){
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include e(topic){
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: rem(16px);
+    font-weight: $font-weight--thin;
+  }
+}

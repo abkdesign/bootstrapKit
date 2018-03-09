@@ -1,0 +1,82 @@
+
+.icon-list{
+ @include e(list){
+  list-style: none;
+  padding: 0;
+  padding: 1rem;
+  width: 100%;
+ }
+  @include e(item){
+    padding-left: 0.3em;
+    font-size: rem(16px);
+    margin-bottom: 8px;
+    color:$marine;
+    &:before {
+      font-size: rem(14px);
+      margin-right: em(5px);
+      color: $color-secondary;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900; 
+      content: "\f058";
+      display: inline-block;
+    }
+    @include m(activities){
+      padding-left: 0.3em;
+      font-size: rem(16px);
+      margin-bottom: 8px;
+      &:before {
+        font-size: rem(14px);
+        margin-right: em(5px);
+        color: $color-primary;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f140";
+        display: inline-block;
+      }
+    }
+    @include m(parts){
+      padding-left: 0.3em;
+      font-size: rem(16px);
+      margin-bottom: 8px;
+      &:before {
+        font-size: rem(14px);
+        margin-right: em(5px);
+        color: $color-secondary;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f0c0";
+        display: inline-block;
+      }
+    }
+    @include m(da){
+      padding-left: 0.3em;
+      font-size: rem(16px);
+      margin-bottom: 8px;
+      &:before {
+        content: "";
+        height:1em; 
+        width:1em; 
+        background-image:url('#{$path--rel}/dk.svg'); 
+        background-size:contain; 
+        background-repeat:no-repeat; 
+        padding-left: 2em; 
+        display: inline-block;
+      }
+    }
+    @include m(uk){
+      padding-left: 0.3em;
+      font-size: rem(16px);
+      margin-bottom: 8px;
+      &:before {
+        content: "";
+        height:1em; 
+        width:1em; 
+        background-image:url('/gb.svg'); 
+        background-size:contain; 
+        background-repeat:no-repeat; 
+        padding-left: 2em; 
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+
+.activity-card{
+  @include make-col-ready();
+  @include make-col(12);
+  @include e(intro){
+    height: em(100px);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    h2{
+      color: palette(grey, light);
+      font-weight: $font-weight--medium;
+      font-size: rem(32px);
+      margin-right: em(6px);
+    }
+    span{
+      color: palette(grey, x-light);
+      font-size: rem(18px);
+      font-weight: $font-weight--medium;
+    }
+  }
+  @include e(list){
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background: $color-accent;
+    padding: 10px 0px;
+    list-style-type: none; 
+  }
+  @include e(item){
+    @include make-col(3);
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-right: 1px solid $gray-200;
+    &:last-of-type{
+      border: none;
+    }
+  }
+  @include e(icon){
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin-right: em(8px);
+    font-size: rem(35px);
+    color: $color-primary;
+  }
+  @include e(info){
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @include e(number){
+    width: 100%;
+    margin-bottom: 0px;
+    font-weight: $font-weight--ultra-bold;
+    font-size: rem(24px);
+    color: palette(grey,dark);
+  }
+  @include e(text){
+     width: 100%; 
+     font-size: rem(16px);
+     color: palette(black,x-light);
+     margin-bottom: 0px;   
+  }
+}

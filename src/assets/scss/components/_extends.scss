@@ -1,0 +1,18 @@
+%card-default{
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  background: $color-accent;
+
+}
+%field-icon{
+  font-size: rem(14px);
+  margin-right: em(5px);
+  color: $color-primary;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  display: inline-block;
+}
+%field-item{
+  padding-left: 0.3em;
+  font-size: rem(16px);
+  margin-bottom: 8px;
+}

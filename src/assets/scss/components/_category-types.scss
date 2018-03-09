@@ -1,0 +1,40 @@
+.category-types{
+  @include e(type){
+    display: flex;
+    flex-direction: column;
+  }
+  @include e(topic){
+    font-size: rem(16px);
+    color: $marine;
+  }
+  @include e(list){
+    width: 100%;
+    list-style: none;
+    padding: rem(20px) rem(10px);
+  }
+  @include e(item){ 
+    background: $white;
+    height: 100px;
+    border: 2px solid $gray-300;
+    display: flex;
+    align-items: center;
+    padding-left: rem(20px);
+    align-items: center;
+    flex-direction: row;
+    .custom-control {
+      width: 100%;
+    }
+  }
+  @include e(help){
+    @include make-col(1); 
+    font-size: rem(18px);
+    color:$color-primary;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: rem(40px);
+    user-select: none;
+    cursor: pointer;
+  }
+
+}

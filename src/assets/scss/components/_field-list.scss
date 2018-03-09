@@ -1,0 +1,141 @@
+.field-list{
+  padding: 1.25rem;
+  @include e(header){
+    width: 100%;
+    background: $white;
+    height: 50px;
+    padding: rem(5px) rem(20px);
+    color:darken($color-primary, 20%);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid $gray-200;
+  }
+  @include e(body){ 
+    display: flex;
+    flex-direction: column;
+    background: $white;
+  }
+  @include e(footer){
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include e(field){
+    width: 100%;
+    background: #fbfbfb;
+    border: 1px solid #eeeeee;
+    border-bottom: 2px solid $gray-300;
+    @include make-row();
+    margin: 0px;
+  }
+  @include e(fieldContainer){
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eeeeee;
+    @include make-row();
+    margin: 15px;
+  }
+  @include e(fieldHeader){
+    background: $color-primary;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include e(fieldFooter){
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include e(fieldMenu){
+    @include make-col(4);
+    align-items: flex-start;
+    padding: 15px 15px 15px 0px;
+    
+    justify-content: flex-end;
+    display: flex;
+  }
+  @include e(fieldTopic){
+    font-size: rem(18px);
+    @include make-col(8);
+    font-weight: $font-weight--medium;
+    color: palette(black,light);  
+  }
+  @include e(menu){
+    @include make-col(4);
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+  }
+  @include e(list){
+    list-style: none;
+    padding: 0;
+    width: 100%;
+     background: #fbfbfb;
+  }
+  @include e(itemList){
+    list-style: none;
+    padding: 0;
+    padding: 1rem;
+    margin: 0px;
+    @include make-col(8);
+  }
+  @include e(itemContent){
+    @include make-col(8);
+  }
+  @include e(item){
+    @include m(name){
+     @include make-col(12);
+      @extend %field-item;
+      &:before {
+        @extend %field-icon;
+        content: "\f058";
+      }
+    }
+    @include m(cvr){
+      @include make-col(12);
+      @extend %field-item;
+      &:before {
+        @extend %field-icon;
+        content: "\f1ad";
+      }
+    }
+    @include m(adress){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon; 
+        content: "\f2b9";
+      }
+    }
+    @include m(zipCode){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon;
+        content: "\f2b9";
+      }
+    }
+    @include m(city){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon; 
+        content: "\f1ad";
+      }
+    }
+    @include m(country){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon;
+        content: "\f0ac";
+      }
+    }
+  }
+}
