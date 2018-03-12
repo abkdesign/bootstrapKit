@@ -3,11 +3,38 @@
   padding: 1rem;
   @include e(icon){
     width: 30px;
+    color: $danger;
   }
   @include e(mediaHeader){
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 1px solid $gray-200;
+  }
+  @include e(title){
+    @include make-col(12);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: em(5px);
+    min-height: 30px;
+    h6{
+      font-weight: $font-weight--bold;
+      color: $text-muted;
+    }
+  }
+  @include e(description){
+    @include make-col(12);
+    min-height: 25px;
+    font-size: 80%;
+    color: $text-muted;
+  }
+  @include e(body){
+    max-height: 500px;
+    /* width */
+    ::-webkit-scrollbar {
+      width: 20px;
+      background: $color-primary;
+    }
+    overflow-y: scroll;
   }
   @include e(mediaHeaderIcon){
     color: $color-primary;
@@ -15,10 +42,14 @@
   }
   @include e(media){
     border-bottom: 1px solid $gray-300;
+
   }
   @include e(mediaBox){
     padding-bottom: 1rem !important;
     font-size: 80%;
     font-weight: 400;
+  }
+  @include e(btn){
+    margin-left: em(8px);
   }
 }

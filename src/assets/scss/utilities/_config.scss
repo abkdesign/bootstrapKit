@@ -98,8 +98,8 @@ $theme-colors:(
 	grey: $grey,
 	shadow: $color-shadow,
 	success : $green,
-	danger   : $sunglo,
-	warning : $coral,
+	danger   : $yellow,
+	warning : $sunglo,
 	info    : $lightrosa,
 	dark : $marine,
 	light: $white
@@ -110,7 +110,7 @@ $primary: $color-primary;
 $secondary: $color-secondary;
 $success: $green;
 $info: $theme-light;
-$warning: $coral;
+$warning: $yellow;
 $danger: $sunglo;
 $light: $black; 
 $dark: $white;

@@ -13,7 +13,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 30px;
+  margin-left: 30px;
+  .nav-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 .navbar-wrapper{
 	height: 100%;
@@ -108,7 +113,7 @@
         text-decoration: none;
       }
       svg{
-        margin-right: em(5px);
+        margin-right: em(8px);
       }
     }
     @include m(disabled){
