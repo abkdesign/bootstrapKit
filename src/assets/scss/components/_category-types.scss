@@ -15,24 +15,27 @@
   @include e(item){ 
     background: $white;
     height: 100px;
-    border: 2px solid $gray-300;
+    border-bottom: 2px solid $gray-200;
     display: flex;
     align-items: center;
     padding-left: rem(20px);
     align-items: center;
     flex-direction: row;
+    &:nth-child(odd){
+      background: $theme-grey;
+    }
     .custom-control {
       width: 100%;
     }
   }
   @include e(help){
-    @include make-col(1); 
+    
     font-size: rem(18px);
     color:$color-primary;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right: rem(40px);
+    margin-right: rem(40px);
     user-select: none;
     cursor: pointer;
   }

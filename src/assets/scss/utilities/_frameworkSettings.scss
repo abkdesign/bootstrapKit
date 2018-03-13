@@ -607,8 +607,8 @@ $card-columns-margin:               $card-spacer-y ;
 
 $tooltip-font-size:           $font-size-sm ;
 $tooltip-max-width:           200px ;
-$tooltip-color:               $white ;
-$tooltip-bg:                  $black ;
+$tooltip-color:               $black;
+$tooltip-bg:                  $theme-grey;
 $tooltip-border-radius:        $border-radius ;
 $tooltip-opacity:             .9 ;
 $tooltip-padding-y:           .25rem ;

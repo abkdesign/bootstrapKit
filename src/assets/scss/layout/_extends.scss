@@ -1,28 +1,43 @@
 // ==========================================================================
 // Placeholders
 // ==========================================================================
+// Headlines
 
+%hdln-prim {
+  color: palette(grey, x-dark);
+  font-weight: $font-weight--light;
+  font-size: rem(63px);
+  line-height: (46px/42px);
+  margin-top: 0;
+}
+%hdln-sec {
+  color: palette(grey, light);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--thin;
+  font-size: rem(45px);
+  font-family: $font-family--secondary;
+}
 // Panel
 
 
 %panel-default {
   box-shadow: $panel-boxShadow;
   padding-top: em(30px);
-  @include breakpoint(medium) {
+  @include media-breakpoint-up(md) {
     padding-bottom: em(20px);
   }
 }
 
 %panel-padding {
   padding-top: em(34px);
-  @include breakpoint(medium) {
+  @include media-breakpoint-up(md) {
     padding-top: em(80px);
     padding-bottom: em(34px);
   }
 }
 %panel-padding-all {
   padding-top: em(34px);
-  @include breakpoint(medium) {
+  @include media-breakpoint-up(md) {
     padding: em(34px);
   }
 }

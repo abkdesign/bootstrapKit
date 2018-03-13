@@ -7,3 +7,6 @@ import './assets/scss/app.scss';
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

@@ -12,26 +12,13 @@
 // ==========================================================================
 // Headlines
 // ==========================================================================
-.page-title{
-	font-size: rem(58px);
-	letter-spacing: rem(2px);
-	margin-top: 0px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-	line-height: 110%;
-}
-.entry-title{
-	margin-bottom: 10px;
-	@include breakpoint(small){
-		font-size: 3.5rem;
-	}
-}
-.widget-title{
-	margin-top: 0px;
-}
-.headline {
 
+.headline {
+    margin-bottom: 0px;
+    font-weight: 900;
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: #616161;
 	&-primary {
 		@extend %hdln-prim;
 		margin-bottom: em(70px, 42px);
@@ -72,33 +59,6 @@
 		}
 		margin-bottom: 0;
 	}
-	&-widget{
-
-		font-weight: $font-weight--bold;
-		margin-bottom: em(10px);
-		line-height: rem(38px);
-		margin-top: 0;
-		color:$grey;
-		@include m(grouped){
-			font-size: rem(36px);
-			line-height: rem(36px);
-			margin-top: 0px;
-			margin-bottom: em(0px);
-			font-weight: $font-weight--bold;
-			@include breakpoint(small){
-				margin-bottom: em(5px);
-			}
-		}
-		@include m(sub){
-			font-weight: $font-weight--light;
-			font-size: rem(28px);
-			line-height: $base__line;
-			margin-bottom: em(10px);
-		}
-		@include breakpoint(small){
-			margin-bottom: 0px;
-		}
-	}
 	&-break{
 		line-height: em(20px);
 		text-transform: uppercase;
@@ -129,7 +89,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	max-width: $grid-container;
+	
 	margin-left: auto;
 	margin-right: auto;
 	&:before, :after {

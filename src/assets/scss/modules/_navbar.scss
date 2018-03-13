@@ -26,7 +26,11 @@
 .menu-large {
   position: static !important;
 }
-
+.navbar-nav{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
 .megamenu > .row > .dropdown-item{
   &:hover{
@@ -99,19 +103,22 @@
     padding-left: em(8px);
   }
   @include e(item){
+    padding: 5px 5px;
     span{
       margin-left: em(5px);
     }
     &:first-of-type{
       margin-top: em(8px);
     }
+    &:hover{
+      a{
+        color: palette(primary, light);
+        text-decoration: none;
+      }
+    }
     a{
       text-decoration: none;
       color: palette(black, base);
-      &:hover{
-        color: palette(black, x-light);
-        text-decoration: none;
-      }
       svg{
         margin-right: em(8px);
       }
@@ -130,6 +137,12 @@
         }
       }
     }
+  }
+  @include e(link){
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+    display: block;
   }
 }
 @media (max-width: 768px) {
