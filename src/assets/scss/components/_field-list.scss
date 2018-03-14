@@ -37,7 +37,7 @@
     background: #fff;
     border: 1px solid #eeeeee;
     @include make-row();
-    margin: 15px;
+    //margin: 15px;
   }
   @include e(fieldHeader){
     background: $color-primary;

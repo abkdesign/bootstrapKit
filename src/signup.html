@@ -16,19 +16,28 @@
     <form class="form-signin bg-white">
         <img class="mb-4" src="https://app.complycloud.com/Content/static/logotrans.png" alt="" style="margin: 0 auto;
     display: block;">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <h1 class="h3 mb-3 headline-secondary">Log ind</h1>
+      
+        <div class="input-group mb-3">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope"></i></span>
+          </div>
+          <input type="email" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><i class="fas fa-key"></i></span>
+          </div>
+          <input type="password" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
         <div class="checkbox mb-3">
           <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck2">
               <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
           </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        <button class="btn btn-sm btn-primary btn-block" type="submit">Sign in</button>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
     </form>
   </div>
 <script type="text/javascript" src="./../build/js/vendor_bundle.js"></script><script type="text/javascript" src="./../build/js/app_bundle.js"></script>

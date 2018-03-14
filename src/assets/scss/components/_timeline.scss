@@ -101,8 +101,8 @@ body {
 } */
 
 #timeline {
-  padding: 100px 0;
-  background: $background;
+  padding: 20px 0;
+  //background: $background;
   border-top: $border;
   border-bottom: $border;
   h1 {
@@ -117,6 +117,8 @@ body {
     margin: auto;
     margin-bottom: 45px;
   }
+  
+}
   .timeline-card-wrapper {
     position: relative;
     margin: auto;
@@ -149,9 +151,8 @@ body {
     max-width: 94%;
     z-index: 2;
     @include e(container){
-      @include make-col-ready();
+      
       @include make-col(10);
-      padding: 0px;
       max-width: 100%;
       display: flex;
       flex-direction: column;
@@ -305,4 +306,3 @@ body {
       }
     }
   }
-}

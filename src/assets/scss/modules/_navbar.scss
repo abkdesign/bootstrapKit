@@ -104,8 +104,8 @@
   }
   @include e(item){
     padding: 5px 5px;
-    span{
-      margin-left: em(5px);
+    &:nth-child(odd){
+      background: $theme-grey;
     }
     &:first-of-type{
       margin-top: em(8px);
@@ -115,6 +115,9 @@
         color: palette(primary, light);
         text-decoration: none;
       }
+    }
+    span{
+      margin-left: em(5px);
     }
     a{
       text-decoration: none;
@@ -139,10 +142,11 @@
     }
   }
   @include e(link){
-    white-space: pre-wrap;
+    white-space: normal;
     word-wrap: break-word;
     width: 100%;
     display: block;
+    
   }
 }
 @media (max-width: 768px) {

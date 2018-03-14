@@ -18,6 +18,27 @@
       font-size: rem(18px);
       font-weight: $font-weight--medium;
     }
+    @include m(center){
+      height: em(100px);
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      margin-top: 85px;
+      padding: 0px 45px;
+      h2{
+        color: palette(grey, light);
+        font-weight: $font-weight--medium;
+        font-size: rem(32px);
+        margin-right: em(6px);
+      }
+      span{
+        color: palette(grey, x-light);
+        font-size: rem(18px);
+        font-weight: $font-weight--medium;
+      }
+    }
   }
   @include e(list){
     width: 100%;
