@@ -43,7 +43,7 @@ $marker-size: 9px;
 
 $steps: #46b8e9;
 $colors: #4d92eb,
-#3ee9d1,
+#bdbdbd,
 #ce43eb,
 #4d92eb;
 $timeline: #bdbdbd;
@@ -150,6 +150,14 @@ body {
     margin: 10px auto 80px;
     max-width: 94%;
     z-index: 2;
+    @include e(disabled){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem(24px);
+      color: #9e9e9e;
+      margin: 40px;
+    }
     @include e(container){
       
       @include make-col(10);
@@ -162,6 +170,11 @@ body {
     @include e(box){
       margin-left: 45px;
       box-shadow: $box-shadow;
+      @include m(disabled){
+        background-color: $gray-200;
+        margin-left: 45px;
+        box-shadow: $box-shadow;
+      }
     }
     @include e(line){
       @include make-col-ready();
@@ -243,6 +256,7 @@ body {
       color: #fff;
       font-weight: 400;
       background-color: #4d92eb;
+      
       .number-box {
         display: inline;
         float: left;
@@ -274,6 +288,45 @@ body {
           }
         }
       }
+      @include m(disabled){
+        background-color: #bdbdbd;
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: 400;
+        .number-box {
+          display: inline;
+          float: left;
+          margin: $inner-margin;
+          padding: 10px;
+          font-size: $number-size;
+          line-height: $number-size;
+          font-weight: 600;
+          background: rgba(0, 0, 0, 0.17);
+        }
+        h2 {
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          font-weight: inherit;
+          letter-spacing: 2px;
+          margin: 0;
+          padding-bottom: 6px;
+          line-height: 1rem;
+          @include mq-sm {
+            font-size: 165%;
+            line-height: 1.2rem;
+          }
+          span {
+            display: block;
+            font-size: 0.6rem;
+            margin: 0;
+            @include mq-sm {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
     }
     .body {
       background: #fff;
@@ -294,6 +347,28 @@ body {
       img {
         display: block;
         width: 100%;
+      }
+      @include m(disabled){
+        background-color: $gray-200;
+        border: $border;
+        border-top: 0;
+        padding: $inner-margin;
+        .card-category__subcategory{
+          margin-bottom: 0px;
+        }
+        @include mq-lg {
+          height: auto;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: $inner-margin;
+          color: $gray-400;
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
       }
     }
     @for $i from 1 through $items {

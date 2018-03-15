@@ -1,0 +1,15 @@
+.support-board{
+  @include make-row();
+  @include e(help){
+    height: 400px;
+    background: $gray-300;
+    @include make-col-ready();
+    @include make-col(12);
+  }
+  @include e(law){
+    height: 400px;
+    background: $gray-300;
+    @include make-col-ready();
+    @include make-col(12);
+  }
+}
