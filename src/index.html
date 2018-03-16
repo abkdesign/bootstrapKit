@@ -21,8 +21,8 @@
               <img src="https://app.complycloud.com/Content/static/logotrans.png" alt="">
           </a>
           <ul class="main-navbar navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item nav-item--active">
+              <a class="nav-link nav-link--active" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -109,7 +109,7 @@
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
-          <ul class=" navbar-nav navbar-right">
+          <ul class="secondary-navbar navbar-nav navbar-right">
             <li class="dropdown  open">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                 <i class="fas fa-user"></i> abk@complycloud.com<span class="caret"></span>
@@ -200,7 +200,7 @@
                   <span class="dashboard-card__mediaHeaderIcon">
                       <i class="fas fa-tasks"></i>
                   </span>
-                  <h6 class="">To do liste</h6> 
+                  <h6 class="headline-dashboard">To do liste</h6> 
                 </div>
                 <div class="dashboard-card__description">
                     Her kan du altid se en opdateret liste over de ting, du skal gøre for at blive og forblive GDPR-compliant.
@@ -286,7 +286,7 @@
                   <span class="todo-card__headerIcon">
                       <i class="far fa-question-circle"></i>
                   </span>
-                  <h6 class="">
+                  <h6 class="headline-dashboard">
                     Support og FAQ
                   </h6>
                 </div>
@@ -338,14 +338,45 @@
         </div>
       </section>
       <section style="margin: 50px 0px">
-        <div class="support-board">
-          <div class="support-board__help">
-              <i class="far fa-life-ring"></i>
+        <div class="dashboard-card">
+            <div class="support-board">
+                <div class="support-board__help">
+                    <div class="support-board__image-support">
+                        <i class="far fa-life-ring"></i>  
+                    </div>
+                   
+                    <div class="support-board__title">
+                      General Support
+                    </div>
+                    <ul class="support-board__list">
+                        <li class="support-board__icon--mail">
+                          support@complycloud.com
+                        </li>
+                    </ul>
+                    <div class="support-board__description">
+                      Har du problemer på vores platform eller har du et generelt spørgsmål et sted du er gået i stå?
+                    </div>
+                </div>
+                <div class="support-board__law">
+                  <div class="support-board__image">
+                    <i class="fas fa-gavel"></i>
+                  </div>
+                  <div class="support-board__title">
+                      Juridisk support
+                  </div>
+                  <ul class="support-board__list">
+                      <li class="support-board__icon--mail">
+                        legal@complycloud.com
+                      </li>
+                  </ul>
+                  <div class="support-board__description">
+                    I dit abonnoment er i tildelt et klippekort,
+                    hvor i kan få Judridisk support der er tilknyttet
+                    GDPR. 
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="support-board__law">
-            <i class="fas fa-gavel"></i>
-          </div>
-        </div>
         <div class="row">
           <div class="col-sm">
             <div></div>

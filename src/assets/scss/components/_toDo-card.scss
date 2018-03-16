@@ -12,6 +12,7 @@
       display: inline-block;
       color: lighten($marine, 20%);
       margin: 0px;
+      font-size: rem(18px);
     }
   }
   @include e(headerIcon){
@@ -83,6 +84,7 @@
   }
   @include e(topic){
     height: 30px;
+    max-width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -48,6 +48,20 @@
         display: inline-block;
       }
     }
+    @include m(mobile){
+      padding-left: 0.3em;
+      font-size: rem(16px);
+      margin-bottom: 8px;
+      &:before {
+        font-size: rem(14px);
+        margin-right: em(5px);
+        color: $color-secondary;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f10b";
+        display: inline-block;
+      }
+    }
     @include m(da){
       padding-left: 0.3em;
       font-size: rem(16px);

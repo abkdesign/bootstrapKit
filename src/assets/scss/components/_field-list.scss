@@ -37,7 +37,7 @@
     background: #fff;
     border: 1px solid #eeeeee;
     @include make-row();
-    //margin: 15px;
+    margin: 0px;
   }
   @include e(fieldHeader){
     background: $color-primary;
@@ -135,6 +135,14 @@
       &:before {
         @extend %field-icon;
         content: "\f0ac";
+      }
+    }
+    @include m(mail){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon;
+        content: "\f0e0";
       }
     }
   }

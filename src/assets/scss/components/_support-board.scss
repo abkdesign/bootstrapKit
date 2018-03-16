@@ -1,15 +1,79 @@
 .support-board{
   @include make-row();
+  padding: em(15px);
+  @include e(card){
+    box-shadow: $panel-boxShadow;
+    background:lighten($theme-body, 20%);
+  }
   @include e(help){
-    height: 400px;
-    background: $gray-300;
+   
     @include make-col-ready();
-    @include make-col(12);
+    @include make-col(6);
+    min-height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: em(20px);
+    border-right: 1px solid $gray-200;
   }
   @include e(law){
-    height: 400px;
-    background: $gray-300;
+    
     @include make-col-ready();
-    @include make-col(12);
+    @include make-col(6);
+    min-height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: em(20px);
+  }
+  @include e(title){
+    font-size: rem(32px);
+    color: $gray-600; 
+    text-align: center;
+    margin-bottom: em(15px);
+  }
+  @include e(image-support){
+    font-size: rem(100px);
+    color: $danger;
+  }
+  @include e(image){
+    font-size: rem(100px);
+    color: $color-primary;
+  }
+  @include e(description){
+    font-size: rem(16px);
+    color:$gray-600;
+    text-align: center;
+    max-width: em(400px);
+  }
+  @include e(list){
+    display: flex;
+    flex-direction: row;
+  }
+  @include e(icon){
+    @include m(mobile){
+      @extend %icon-item;
+      &:before {
+        content: "\f10b";
+        color: $color-primary;
+      }
+      
+    }
+    @include m(mail){
+      @extend %icon-item;
+      &:before {
+        content: "\f0e0";
+        color: $color-primary;
+      }
+    }
+    @include m(ticket){
+      @extend %icon-item;
+      &:before {
+        content:"\f3ff";
+        color: $color-primary;
+      }
+    }
   }
 }

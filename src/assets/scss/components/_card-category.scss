@@ -51,4 +51,7 @@
     background: #fbfbfb;
     border: 1px solid #eeeeee;
   }
+  @include m(interactive){
+    cursor: pointer;
+  }
 }
