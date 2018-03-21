@@ -84,6 +84,13 @@
     padding: 1rem;
     margin: 0px;
     @include make-col(8);
+    @include m(full){
+      list-style: none;
+      padding: 0;
+      padding: 1rem;
+      margin: 0px;
+      @include make-col(12);
+    }
   }
   @include e(itemContent){
     @include make-col(8);
@@ -110,7 +117,7 @@
       @include make-col(12);
       &:before {
         @extend %field-icon; 
-        content: "\f2b9";
+        content: "\f041";
       }
     }
     @include m(zipCode){
@@ -143,6 +150,22 @@
       &:before {
         @extend %field-icon;
         content: "\f0e0";
+      }
+    }
+    @include m(person){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon;
+        content: "\f007";
+      }
+    }
+    @include m(businessType){
+      @extend %field-item;
+      @include make-col(12);
+      &:before {
+        @extend %field-icon;
+        content: "\f0b1";
       }
     }
   }

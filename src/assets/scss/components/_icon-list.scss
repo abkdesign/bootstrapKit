@@ -62,6 +62,27 @@
         display: inline-block;
       }
     }
+    @include m(businessType){
+      @extend %icon-item;
+      &:before {
+        content: "\f0b1";
+        color: $color-primary;
+      }
+    }
+    @include m(person){
+      @extend %icon-item;
+      &:before {
+        content: "\f007";
+        color: $color-primary;
+      }
+    }
+    @include m(mail){
+      @extend %icon-item;
+      &:before {
+        content: "\f0e0";
+        color: $color-primary;
+      }
+    }
     @include m(da){
       padding-left: 0.3em;
       font-size: rem(16px);
