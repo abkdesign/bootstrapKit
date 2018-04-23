@@ -1,34 +1,39 @@
 .#{$themeVar}-questionnarie-container{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-  background: #f2f2f2ee;
-  position: relative;
-  //box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.1)
-}
-.#{$themeVar}-form{
-    //background: #fafafa;
-}
-.#{$themeVar}-form__label{
-    position: relative;
-    width: 99%;
-    height: auto;
-    display: block;
-}
-.#{$themeVar}-form__label--multiple{
-    border-bottom: 1px solid #eee;
-    position: relative;
-    width: 100%;
-    height: auto;
-    background: #fff;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    word-wrap: break-word;
-    padding-right: 5px; 
-    //border-bottom: 1px solid #2196f3 !important;
-}
-.#{$themeVar}-toggle{
-    background: #fff;
-}
+    flex-direction: column;
+    //min-height: 100vh;
+    height: 100%;
+    
+    //background: #f2f2f2ee;
+    position: relative;
+    //box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.1)
+  }
+  .#{$themeVar}-form{
+      //background: #fafafa;
+  }
+  .#{$themeVar}-form__label{
+      position: relative;
+      width: 99%;
+      height: auto;
+      display: block;
+  }
+  .#{$themeVar}-form__label--multiple{
+      border-bottom: 1px solid #eee;
+      position: relative;
+      width: 100%;
+      height: auto;
+      background: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      word-wrap: break-word;
+      padding-right: 5px; 
+      //border-bottom: 1px solid #2196f3 !important;
+  }
+  .#{$themeVar}-toggle{
+      background: #fff;
+  }
+  .#{$themeVar}-question{
+      margin-bottom: 25px;
+  }
+  .Select-menu-outer { position: relative !important}

@@ -2,8 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 // HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-
+// media
+const LinkMediaHtmlWebpackPlugin = require('link-media-html-webpack-plugin');
 const commonJS = require("babel-core").transform("code", {
 	plugins: ["transform-es2015-modules-commonjs"]
 });
@@ -100,7 +100,8 @@ module.exports = env => {
 		plugins: [
 			cleanBuildFolder,
 			extractSass,
-			commonCunk
+			commonCunk,
+			new LinkMediaHtmlWebpackPlugin()
 		]
 }
 };
