@@ -1,0 +1,81 @@
+html, body {
+  height: 99%;    
+}
+.main-container{
+  max-width: 100%;
+  margin: 0px;
+}
+#timeline{
+  padding:0px;
+  border: none;
+  margin: 1.5%;       
+  font-family: sans-serif;  
+}
+#timeline:last-child{
+  text-align:left;
+  margin: 0;
+  page-break-after: auto;
+  padding: 0;
+}
+#timeline h1{
+  text-align:left;
+  margin: 0;
+}
+.timeline-card .head h2{
+  line-height: 1.5;
+  text-transform:none;
+}
+#timeline p.leader{
+  text-align:left;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.timeline-card__line{
+  display: none;
+}
+.timeline-card-wrapper{
+  margin: 0;
+  width: 100%;
+}
+.timeline-card__container{
+  flex:100%;
+  padding: 0px;
+  margin:0;
+}
+.timeline-card timeline-card--step1{
+ margin: 0;
+}
+.timeline-card{
+  margin: 0;
+}
+.timeline-card__container{
+  border:none;
+  margin:0;
+}
+.timeline-card__box{
+  box-shadow: 0px;
+  margin: 0;
+}
+.card-category__subheader{
+  border:none;
+  margin:0;
+  padding: 0;
+  display: inline-block;
+}
+.card-category__subcategory{
+  border:none;
+  margin:0;
+}
+.timeline-card .body{
+  border:none;
+  margin:0;
+}
+
+.icon-list__list{
+  display:inline;
+  margin:0;
+}
+body, h1, h2, h3, ol, ul, div,li:last-child{
+  page-break-after:auto
+};
+body, h1, h2, h3, ol, ul, div,li {     width: auto;     border: 0; padding: 0;     float: none;     position: static;     overflow: visible; }
