@@ -5,7 +5,9 @@
 .main-nav {	
 	position: relative;
 	height: 100%;
-	@include make-container();
+  @include make-container();
+  padding-right: 0;
+  padding-left: 0;
 }
 .main-navbar{
 	height: 100%;
@@ -13,14 +15,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  margin-left: 30px;
   padding-right: 0px;
   padding-left: 0px;
   .nav-item{
     height: 100%;
     display: flex;
     align-items: center;
-    width: 100%;
+    padding:10px;
     justify-content: center;
     @include m(active){
       background: $gray-100;
