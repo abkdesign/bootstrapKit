@@ -1,6 +1,18 @@
 html, body {
-  height: 99%;    
+  height: 99%;
+  background:none;    
 }
+body, h1, h2, h3, ol, ul, div,li:last-child{
+  page-break-after:auto
+};
+body, h1, h2, h3, ol, ul, div,li,p { color: black; width: auto;     border: 0; padding: 0;     float: none;     position: static;     overflow: visible; }
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 25mm 25mm 25mm 25mm;  
+} 
 .main-container{
   max-width: 100%;
   margin: 0px;
@@ -24,6 +36,7 @@ html, body {
 .timeline-card .head h2{
   line-height: 1.5;
   text-transform:none;
+  color: black;
 }
 #timeline p.leader{
   text-align:left;
@@ -44,9 +57,16 @@ html, body {
 }
 .timeline-card timeline-card--step1{
  margin: 0;
+ border-bottom: 1px solid grey;
 }
 .timeline-card{
   margin: 0;
+}
+.timeline-card .body{
+  padding:0;
+}
+.card-category__subheder-icon{
+  display: none;
 }
 .timeline-card__container{
   border:none;
@@ -55,6 +75,9 @@ html, body {
 .timeline-card__box{
   box-shadow: 0px;
   margin: 0;
+}
+.timeline-card__box .head{
+  background-color: #4d92eb;
 }
 .card-category__subheader{
   border:none;
@@ -65,17 +88,22 @@ html, body {
 .card-category__subcategory{
   border:none;
   margin:0;
+  padding:0;
 }
 .timeline-card .body{
   border:none;
   margin:0;
 }
-
+.body{
+  padding:0;
+  margin:0;
+}
 .icon-list__list{
   display:inline;
   margin:0;
+  padding:0 10px;
 }
-body, h1, h2, h3, ol, ul, div,li:last-child{
-  page-break-after:auto
-};
-body, h1, h2, h3, ol, ul, div,li {     width: auto;     border: 0; padding: 0;     float: none;     position: static;     overflow: visible; }
+.icon-list__list{
+  padding-bottom: 0px;
+  page-break-after: auto;
+}
