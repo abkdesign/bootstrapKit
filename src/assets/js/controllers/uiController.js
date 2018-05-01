@@ -1,8 +1,8 @@
 import store from './../utils/store';
 import Actions from './../actions/';
 import Blazy from './../services.js/lazy';
-import Siema from 'siema';
 import setSlideIndex from './../components/slider';
+import StickySidebar from 'sticky-sidebar';
 // UI CONTROLLER
 const UIController = (function (state,Actions) {
   let _state = state;
@@ -28,6 +28,12 @@ const UIController = (function (state,Actions) {
       element: '#buttonDown',
       eventType: 'action',
       action: Actions.countDownAction()
+    },
+    {
+      id: 4,
+      element: '.list-group-item',
+      eventType: 'action',
+      action: Actions.scrollByAction(20)
     }];
   let DOMstrings = [];
   let NODEstrings = [];
@@ -161,13 +167,8 @@ const UIController = (function (state,Actions) {
         }
       });
     },
-    siema: function (){
-      return new Siema({
-        loop: true,
-        onInit: setSlideIndex,
-        onChange: setSlideIndex,
-        duration: 800
-      })
+    stickySidebar: function(element, options){
+      return new StickySidebar(element, options);
     }
   };
 })(store, Actions);

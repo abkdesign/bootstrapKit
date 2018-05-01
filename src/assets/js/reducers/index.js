@@ -1,11 +1,12 @@
 import countReducer from './countReducer';
 import {userReducer} from './apiReducer';
 import { toggleSelectReducer} from './appReducer';
-
+import scrollByReducer from './scrollByReducer';
 const Reducers = {
   'userReducer': userReducer,
   'countReducer': countReducer,
-  'toggleSelectReducer': toggleSelectReducer
+  'toggleSelectReducer': toggleSelectReducer,
+  'scrollByReducer': scrollByReducer
 };
 
 

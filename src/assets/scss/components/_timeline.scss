@@ -99,22 +99,27 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 body {
   font-family: Roboto;
 } */
+.timelineSidebar{
+  @include e(navbar){
+    width: 100%;
+  }
+}
+.timeline-container{
+  @include make-row();
+  overflow: hidden;
+}
 .timeline__nav{
-  position: sticky;
-  top: 0;
-  right: 0;
-  height: 500px;
-  width: 300px;
+  float: left;
+  width:100%;
+  color: #ce8888;
+  will-change: min-height;
   background: pink;
 }
-#timeline {
-  padding: 30px 0;
-  //background: $background;
-  border-top: $border;
-  border-bottom: $border;
+.timeline-header{
+  
   h1 {
-    text-align: center;
-    font-size: rem(42px);
+    text-align: left;
+    font-size: rem(32px);
     font-weight: 400;
     margin-bottom: 20px;
     color: palette(grey, light);
@@ -125,7 +130,23 @@ body {
     margin: auto;
     margin-bottom: 45px;
   }
-  
+  @include e(inner){
+    z-index: $zindex-timelineHeader;
+    background:$theme-body;
+    padding: em(35px) em(0px);
+  }
+  @include e(item){
+    margin-left: 10px;
+    float: right;
+  }
+}
+#timeline {
+  padding: 115px 0;
+  //background: $background;
+  border-top: $border;
+  //border-bottom: $border;
+  position: relative;
+  overflow: hidden;
 }
   .timeline-card-wrapper {
     position: relative;
@@ -168,15 +189,13 @@ body {
     }
     @include e(container){
       
-      @include make-col(10);
+      @include make-col(12);
       max-width: 100%;
       display: flex;
       flex-direction: column;
-      padding-top: $outer-margin/2;
-      padding-bottom: $outer-margin/2;
     }
     @include e(box){
-      margin-left: 45px;
+      //margin-left: 45px;
       box-shadow: $box-shadow;
       @include m(disabled){
         background-color: $gray-200;
@@ -191,7 +210,7 @@ body {
       padding-top: $outer-margin/2;
       padding-bottom: $outer-margin/2;
       
-      &:before{
+     /*  &:before{
         @extend %pseudos;
         border-left: 1px solid $timeline;
         height: 100%;
@@ -206,7 +225,7 @@ body {
         //transform: translate(-50%, 25%);
         transform: translate(-50%, 0%);
         top: 85px;
-      }
+      } */
     }
     @include mq-sm {
       //max-width: 60%;
@@ -220,11 +239,12 @@ body {
       width: 100%;
       flex: 1 1 100%; */
       height: auto;
-      margin: 0;
+      margin-top: $outer-margin/2;
+      margin-bottom: $outer-margin/2;
       flex: 1 1 100%;
       max-width: 100%;
       //margin-right: $outer-margin/2;
-     
+     /* 
       &:nth-child(odd) {
         //margin-right: $outer-margin/2;
         .head::after {
@@ -232,14 +252,14 @@ body {
           border-left-width: 15px;
           border-left-style: solid;
           left: 100%;
-        }/* 
+        }
         .head::before {
           @extend %marker;
           // left: $marker-dist + 1;
           right: -111px;
-        } */
-      }
-      &:nth-child(even) {
+        } 
+      }*/
+      /* &:nth-child(even) {
         //margin-right: $outer-margin/2;
         .head::after {
           @extend %arrow;
@@ -247,12 +267,12 @@ body {
           border-left-style: solid;
           left: 100%;
         }
-        /* .head::before {
+        .head::before {
           @extend %marker;
           //right: -53px;
           right: -111px;
-        } */
-      }
+        }
+      } */
     /*   &:nth-child(2) {
         margin-top: $stagger;
       } */

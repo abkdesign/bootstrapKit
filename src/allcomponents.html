@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"></link> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    
+  </head>
+  <body>
+  <header class="site-header sticky-top">
+      <nav class="main-nav navbar-expand-lg container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-wrapper collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand" href="#">
+              <img src="https://app.complycloud.com/Content/static/logotrans.png" alt="">
+          </a>
+          <ul class="main-navbar navbar-nav mr-auto">
+            <li class="nav-item nav-item--active">
+              <a class="nav-link nav-link--active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Ny dokument</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                  </ul>
+
+              </div>
+            </li>
+            <li class="dropdown menu-large nav-item"> 
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Categories </a>
+              <ul class="dropdown-menu megamenu dropdown-menu-left">
+                  <div class="row">
+                  <li class="col-md-6 dropdown-item">
+                      <ul>
+                          <li class="dropdown-header">Danish  <span class="icn--flag-dk"></span></li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link"><i class="far fa-file"></i>
+                              Persondatapolitik til ekstern brug (dansk)</a>
+                          </li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link">
+                              <i class="far fa-file"></i>
+                              Medarbejderinstruks om behandling af personoplysninger og brug af it (dansk)
+                            </a>
+                          </li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link">Sizing</a>
+                          </li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link">
+                              <i class="far fa-file"></i>
+                              Databehandleraftale som dataansvarlig (dansk)      
+                            </a>
+                          </li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link"><i class="far fa-file"></i>Vertical variation</a>
+                          </li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Button dropdowns</li>
+                          <li class="megamenu__item">
+                            <a href="#" class="megamenu__link"><i class="far fa-file"></i>Single button dropdowns</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="col-md-6 dropdown-item">
+                      <ul class="megamenu__list">
+                          <li class="dropdown-header">English<span class="icn--flag-gb"></span></li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Basic example</a>
+                          </li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Sizing</a>
+                          </li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Checkboxes and radio addons</a>
+                          </li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Navs</li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Tabs</a>
+                          </li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Pills</a>
+                          </li>
+                          <li class="megamenu__item--disabled">
+                            <a href="#"><i class="far fa-file"></i>Justified</a>
+                          </li>
+                      </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <ul class="secondary-navbar navbar-nav navbar-right">
+            <li class="dropdown  open">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                <i class="fas fa-user"></i> abk@complycloud.com<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="dropdown-item"><a href="/home/my-profile/">Min profil</a></li>
+                <li class="dropdown-item"><a href="/home/company/">Virksomhed</a></li>
+                <li class=" dropdown-item dropdown-divider"></li>
+                <li class="dropdown-item"><a href="/home/account/">Konto</a></li>
+                <li class="dropdown-item dropdown-divider"></li>
+                <li class="dropdown-item dropdown-submenu disabled">
+                    <div class="dropdown__language">
+
+                    </div>
+                </li>
+                <li class="dropdown-item dropdown-divider"></li>
+                <li class="dropdown-item"><a href="/umbraco/Surface/LoginSurface/MemberLogout">Log af</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main role="main" class="main-container">
+    <div class="container">
+      <div class="activity-card__intro">
+        <h2>Dokumenter</h2>
+        <span>200 i alt</span>
+      </div>
+      <section class="grid-section">
+        <div class="row">
+          <div class="activity-card">
+              <ul class="activity-card__list">
+                <li class="activity-card__item">
+                  <span class="activity-card__icon">
+                      <i class="far fa-file-alt"></i>
+                  </span>
+                  <div class="activity-card__info">
+                    <h3 class="activity-card__number">123  dokumenter</h3>
+                    <p class="activity-card__text">
+                      Samlede
+                    </p>
+                  </div>
+                </li>
+                <li class="activity-card__item">
+                  <span class="activity-card__icon">
+                    <i class="fas fa-tasks"></i>
+                  </span>
+                  <div class="activity-card__info">
+                    <h3 class="activity-card__number">5 to-dos</h3>
+                    <p class="activity-card__text">
+                      Udførte 
+                    </p>
+                  </div>
+                </li>
+                <li class="activity-card__item">
+                  <span class="activity-card__icon">
+                      <i class="far fa-file"></i>
+                  </span>
+                  <div class="activity-card__info">
+                    <h3 class="activity-card__number">300 dokumenter</h3>
+                    <p class="activity-card__text">
+                     Ikke-færdiggjorter 
+                    </p>
+                  </div>
+                </li>
+                <li class="activity-card__item">
+                  <span class="activity-card__icon">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  <div class="activity-card__info">
+                    <h3 class="activity-card__number">30 dage</h3>
+                    <p class="activity-card__text">
+                      Indtil kontrol
+                    </p>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="row">
+          <div class="todo-card">
+            <div class="dashboard-card p-3 bg-white rounded box-shadow">
+              <header class="dashboard-card__mediaHeader border-gray pb-2">
+                <div class="dashboard-card__title">
+                  <span class="dashboard-card__mediaHeaderIcon">
+                      <i class="fas fa-tasks"></i>
+                  </span>
+                  <h6 class="headline-dashboard">To do liste</h6> 
+                </div>
+                <div class="dashboard-card__description">
+                    Her kan du altid se en opdateret liste over de ting, du skal gøre for at blive og forblive GDPR-compliant.
+                </div>
+              </header>
+              <div class="dashboard-card__body">
+                
+              <div class="media dashboard-card__media text-muted pt-3">
+                  <span class="dashboard-card__icon">
+                    <i class="fas fa-flag"></i>
+                  </span>
+                  <p class="media-body dashboard-card__mediaBox">
+                    <strong class="d-block text-gray-dark">Angiv hovedformål </strong>
+                    Indtast virksomhedsoplysninger, branche-tilhørsforhold og lignende etc for at komme i gang.
+                  </p>
+                  <div class="dashboard-card__btn">
+                      <button type="button" class="btn btn-secondary btn-sm">Åbn</button>
+               
+                  </div>
+                </div>
+                <div class="media dashboard-card__media text-muted pt-3">
+                    <span class="dashboard-card__icon">
+                      <i class="fas fa-flag"></i>
+                    </span>
+                    <p class="media-body dashboard-card__mediaBox">
+                      <strong class="d-block text-gray-dark">Angiv hovedformål </strong>
+                      Indtast virksomhedsoplysninger, branche-tilhørsforhold og lignende etc for at komme i gang.
+                    </p>
+                    <div class="dashboard-card__btn">
+                        <button type="button" class="btn btn-secondary btn-sm">Åbn</button>
+                 
+                    </div>
+                  </div>
+                  <div class="media dashboard-card__media text-muted pt-3">
+                      <span class="dashboard-card__icon">
+                        <i class="fas fa-flag"></i>
+                      </span>
+                      <p class="media-body dashboard-card__mediaBox">
+                        <strong class="d-block text-gray-dark">Angiv hovedformål </strong>
+                        Indtast virksomhedsoplysninger, branche-tilhørsforhold og lignende etc for at komme i gang.
+                      </p>
+                      <div class="dashboard-card__btn">
+                          <button type="button" class="btn btn-secondary btn-sm">Åbn</button>
+                   
+                      </div>
+                    </div>
+                    <div class="media dashboard-card__media text-muted pt-3">
+                        <span class="dashboard-card__icon">
+                          <i class="fas fa-flag"></i>
+                        </span>
+                        <p class="media-body dashboard-card__mediaBox">
+                          <strong class="d-block text-gray-dark">Angiv hovedformål </strong>
+                          Indtast virksomhedsoplysninger, branche-tilhørsforhold og lignende etc for at komme i gang.
+                        </p>
+                        <div class="dashboard-card__btn">
+                            <button type="button" class="btn btn-secondary btn-sm">Åbn</button>
+                     
+                        </div>
+                      </div>
+                      <div class="media dashboard-card__media text-muted pt-3">
+                          <span class="dashboard-card__icon">
+                            <i class="fas fa-flag"></i>
+                          </span>
+                          <p class="media-body dashboard-card__mediaBox">
+                            <strong class="d-block text-gray-dark">Angiv hovedformål </strong>
+                            Indtast virksomhedsoplysninger, branche-tilhørsforhold og lignende etc for at komme i gang.
+                          </p>
+                          <div class="dashboard-card__btn">
+                              <button type="button" class="btn btn-secondary btn-sm">Åbn</button>
+                       
+                          </div>
+                        </div>
+              </div>
+              <small class="d-block text-right mt-3">
+                <a href="#">Se alle todos</a>
+              </small>
+            </div>
+          </div>
+          <div class="todo-card">
+            <div class="todo-card__body">
+              <header class="todo-card__header">
+                <div class="todo-card__title">
+                  <span class="todo-card__headerIcon">
+                      <i class="far fa-question-circle"></i>
+                  </span>
+                  <h6 class="headline-dashboard">
+                    Support og FAQ
+                  </h6>
+                </div>
+                <div class="todo-card__description">
+                    Få gode råd og vejledning om GDPR. Klip knappen for at få mere hjælp!
+                </div>
+              </header>
+              <ul class="todo-card__list">
+                <li class="todo-card__item">
+                  <div class="todo-card__icon">
+                      <i class="far fa-question-circle"></i>
+                  </div>
+                  <span class="todo-card__topic">
+                      <a href="">Dataansvarlig og databehandler</a>
+                  </span>
+                </li>
+                <li class="todo-card__item">
+                  <div class="todo-card__icon">
+                      <i class="far fa-question-circle"></i>
+                  </div>
+                  <span class="todo-card__topic">
+                      <a href="">Dataansvarlig og databehandler</a>
+                  </span>
+                </li>
+                <li class="todo-card__item">
+                  <div class="todo-card__icon">
+                      <i class="far fa-question-circle"></i>
+                  </div>
+                  <span class="todo-card__topic">
+                      <a href="">Dataansvarlig og databehandler</a>
+                  </span>
+                </li>
+                <li class="todo-card__item">
+                  <div class="todo-card__icon">
+                    <i class="far fa-question-circle"></i>
+                  </div>
+                  <span class="todo-card__topic">
+                      <a href="">Dataansvarlig og databehandler</a>
+                  </span>
+                </li>
+              </ul>
+              <footer class="todo-card__footer">
+                  <small class="d-block text-right mt-3">
+                    <a href="#">Se alle FAQ</a>
+                  </small>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="margin: 50px 0px">
+        <div class="dashboard-card">
+            <div class="support-board">
+                <div class="support-board__help">
+                    <div class="support-board__image-support">
+                        <i class="far fa-life-ring"></i>  
+                    </div>
+                   
+                    <div class="support-board__title">
+                      General Support
+                    </div>
+                    <ul class="support-board__list">
+                        <li class="support-board__icon--mail">
+                          support@complycloud.com
+                        </li>
+                    </ul>
+                    <div class="support-board__description">
+                      Har du problemer på vores platform eller har du et generelt spørgsmål et sted du er gået i stå?
+                    </div>
+                </div>
+                <div class="support-board__law">
+                  <div class="support-board__image">
+                    <i class="fas fa-gavel"></i>
+                  </div>
+                  <div class="support-board__title">
+                      Juridisk support
+                  </div>
+                  <ul class="support-board__list">
+                      <li class="support-board__icon--mail">
+                        legal@complycloud.com
+                      </li>
+                  </ul>
+                  <div class="support-board__description">
+                    I dit abonnoment er i tildelt et klippekort,
+                    hvor i kan få Judridisk support der er tilknyttet
+                    GDPR. 
+                  </div>
+                </div>
+              </div>
+          </div>
+        <div class="row">
+          <div class="col-sm">
+            <div></div>
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </section>
+      <section class="">
+          <div class="row">
+              <div class="col-sm-12">
+                <div>
+                  
+                    <button type="button" class="btn btn-outline-warning">
+                        <i class="fas fa-minus-circle"></i>
+                        &nbsp; Fjern part
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="far fa-edit"></i>
+                        &nbsp;Rediger "Personoplysninger"
+                    </button>
+                </div>
+                <ul>
+                    <li class="field-list__field">
+                        <div class="col-sm-6">
+                           <ul class="field-list__itemList">
+                               <li class="field-list__item--name">
+                                   Complycloud
+                               </li>
+                               <li class="field-list__item--cvr">
+                                 1231231231231
+                               </li>
+                                 <li class="field-list__item--adress">
+                                   Adresse 1, doesr2342
+                                 </li>
+                                 <li class="field-list__item--adress">
+                                   adresse 2, 32423423
+                                 </li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-6">
+                           <ul class="field-list__itemList">
+                               <li class="field-list__item--zipCode">
+                                   2800
+                               </li>
+                               <li class="field-list__item--city">
+                                 Hellerup
+                               </li>
+                               <li class="field-list__item--country">
+                                 Denmark
+                               </li>
+                           </ul>
+                        </div>
+                       </li>
+                </ul>
+                
+                  <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <i class="fas fa-globe"></i>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1 
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="">
+                                <p class="card-category__description">Her oplistes de kategorier og typer af persondata, som virksomheden behandler.</p>
+                                <div class="card-category">
+                                  <div class="card-category__body">
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">Databehandlere i tredjelande</h3>
+                                        </header>
+                                        <ul class="icon-list__list">
+                                            <li class="icon-list__item--parts">
+                                                Levering af service eller vare
+                                            </li>
+                                            <li class="icon-list__item--parts">
+                                                Administration af kundekrav (reklamationer, krav mv.)
+                                            </li>
+                                            <li class="icon-list__item--parts">
+                                                Kundesupport
+                                            </li>
+                                          </ul>
+                                          <footer class="card-category__subfooter">
+                                            <button type="button" class="btn btn-outline-primary disabled" disabled>
+                                              <i class="far fa-edit"></i>
+                                              &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                            </button>
+                                          </footer>
+                                    </div>
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">Behandlingsaktiviteter</h3>
+                                        </header>
+                                        <ul class="icon-list__list">
+                                            <li class="icon-list__item--activities">
+                                                Levering af service eller vare
+                                            </li>
+                                            <li class="icon-list__item--activities">
+                                                Administration af kundekrav (reklamationer, krav mv.)
+                                            </li>
+                                            <li class="icon-list__item--activities">
+                                                Kundesupport
+                                            </li>
+                                          </ul>
+                                          <footer class="card-category__subfooter">
+                                            <button type="button" class="btn btn-outline-primary disabled" disabled>
+                                              <i class="far fa-edit"></i>
+                                              &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                            </button>
+                                          </footer>
+                                    </div>
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">Generelle personoplysninger</h3>
+                                        </header>
+                                        <ul class="icon-list__list">
+                                            <li class="icon-list__item">
+                                                Navn
+                                            </li>
+                                            <li class="icon-list__item">
+                                                Adresse
+                                            </li>
+                                            <li class="icon-list__item">
+                                                Telefonnummer
+                                            </li>
+                                          </ul>
+                                          <footer class="card-category__subfooter">
+                                            <button type="button" class="btn btn-outline-primary disabled" disabled>
+                                              <i class="far fa-edit"></i>
+                                              &nbsp;Rediger "Personoplysninger"
+                                            </button>
+                                          </footer>
+                                    </div>
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">Ingen oprettet</h3>
+                                        </header>
+                                        <div class="card-category__subbody">
+                                          <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                              <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                                          </div>
+                                          <p>
+                                              Klik på tilføj for at oprette en ny part
+                                          </p>
+                                          
+                                        </div>
+                                        <footer class="card-category__subfooter">
+                                            <button type="button" class="btn btn-outline-primary">
+                                                <i class="far fa-edit"></i>
+                                                &nbsp;Rediger "Personoplysninger"
+                                              </button>
+                                        </footer>
+                                    </div>
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">Oplysninger fra online profiler</h3>
+                                        </header>
+                                        <ul class="icon-list__list">
+                                          <li class="icon-list__item">
+                                              Leverandører (hvor leverandørerne er personer eller enkeltmandsvirksomheder)
+                                          </li>
+                                          <li class="icon-list__item">
+                                              Leverandørers ansatte (hvor leverandørerne er virksomheder)
+                                          </li>
+                                        </ul>
+                                        <footer class="card-category__subfooter">
+                                          <button type="button" class="btn btn-outline-primary">
+                                            <i class="fas fa-plus-circle"></i>
+                                            &nbsp;Tilføj "Formålene med behandling"
+                                          </button>
+                                        </footer>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body" style="padding: 0px;">
+                            <div class="field-list">
+                              <div class="field-list__header">
+                               <h3 class="field-list__fieldTopic">Parter:</h3>
+                               <div class="field-list__menu">
+                                  <button type="button" class="btn btn-outline-primary" style="font-size: 12px;">
+                                      <i class="far fa-edit"></i>
+                                      &nbsp;Tilføj"
+                                  </button>
+                               </div>
+                              </div>
+                              <div class="field-list__body">
+                                <ul class="field-list__list">
+                            
+                                  <li class="field-list__field">
+                                    <header class="field-list__fieldHeader">
+                                      
+                                    </header>
+                                    <div class="field-list__fieldContainer">
+                                      <ul class="field-list__itemList">
+                                        <li class="field-list__item--name">
+                                            Navn
+                                        </li>
+                                        <li class="field-list__item--cvr">
+                                          CVR
+                                        </li>
+                                          <li class="field-list__item--adress">
+                                            Adresse 1
+                                          </li>
+                                          <li class="field-list__item--adress">
+                                            adresse 2
+                                          </li>
+                                          <li class="field-list__item--zipCode">
+                                            postnr
+                                          </li>
+                                          <li class="field-list__item--city">
+                                            by
+                                          </li>
+                                          <li class="field-list__item--country">
+                                            land
+                                          </li>
+                                      </ul>
+                                      <div class="field-list__fieldMenu">
+                                          <button type="button" class="btn btn-outline-warning" style="
+                                          font-size:  10px;
+                                      ">
+                                              <i class="fas fa-minus-circle"></i>
+                                              &nbsp; Fjern part
+                                          </button>
+                                          <button type="button" class="btn btn-outline-primary" style="
+                                          font-size:  10px;
+                                      ">
+                                              <i class="far fa-edit"></i>
+                                              &nbsp;Rediger "Personoplysninger"
+                                          </button>
+                                      </div>
+                                      </div>
+                                      <footer class="field-list__fieldFooter">
+
+                                      </footer>
+                                  </li>
+                                </ul>
+                                <footer class="field-list__footer">
+                                   
+                                </footer>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="dashboard-card my-3">
+              <h2 class="headline-secondary">Redigér data typer</h2>
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Generelle personoplysninger</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Økonomiske personoplysninger</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Personlige og fysiske karakteristika</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="category-types">
+                    <div class="category-types__type">
+                      <h3 class="category-types__topic">Detter er en header</h3>
+                      <ul class="category-types__list">
+                        <li class="category-types__item">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                            </div>
+                            <div class="category-types__help" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under
+                            Hjælp & Support." data-toggle="tooltip">
+                                <i class="far fa-question-circle"  >
+                                </i>
+                            </div>
+                        </li>
+                        <li class="category-types__item">
+                            <div class="custom-control custom-checkbox" >
+                              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                              <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                            </div>
+                            <div class="category-types__help" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Her oplistes de formål, som virksomheden forfølger
+                            med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support." data-toggle="tooltip">
+                                <i class="far fa-question-circle"></i>
+                            </div>
+                        </li>
+                        <li class="category-types__item">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck3">
+                              <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                            </div>
+                            <div class="category-types__help" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Her oplistes de formål, som virksomheden forfølger
+                            med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support." data-toggle="tooltip">
+                                <i class="far fa-question-circle"></i>
+                            </div>
+                        </li>
+                        <li class="category-types__item">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                              <label class="custom-control-label" for="customCheck4">Check this custom checkbox</label>
+                            </div>
+                            <div class="category-types__help" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Her oplistes de formål, som virksomheden forfølger
+                            med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support." data-toggle="tooltip">
+                                <i class="far fa-question-circle"></i>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
+                    <div class="category-types">
+                        <div class="category-types__type">
+                          <h3 class="category-types__topic">Detter er en header</h3>
+                          <ul class="category-types__list">
+                            <li class="category-types__item">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                </div>
+                                <div class="category-types__help">
+                                    <i class="far fa-question-circle"></i>
+                                </div>
+                            </li>
+                            <li class="category-types__item">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                  <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                                </div>
+                                <div class="category-types__help">
+                                    <i class="far fa-question-circle"></i>
+                                </div>
+                            </li>
+                            <li class="category-types__item">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                  <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                                </div>
+                                <div class="category-types__help">
+                                    <i class="far fa-question-circle"></i>
+                                </div>
+                            </li>
+                            <li class="category-types__item">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                  <label class="custom-control-label" for="customCheck4">Check this custom checkbox</label>
+                                </div>
+                                <div class="category-types__help">
+                                    <i class="far fa-question-circle"></i>
+                                </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div> </div>
+                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
+                    <div class="category-types">
+                      <div class="category-types__type">
+                        <h3 class="category-types__topic">Detter er en header</h3>
+                        <ul class="category-types__list">
+                          <li class="category-types__item">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                              <div class="category-types__help">
+                                  <i class="far fa-question-circle"></i>
+                              </div>
+                          </li>
+                          <li class="category-types__item">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                              </div>
+                              <div class="category-types__help">
+                                  <i class="far fa-question-circle"></i>
+                                </div>
+                          </li>
+                          <li class="category-types__item">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                              </div>
+                              <div class="category-types__help">
+                                  <i class="far fa-question-circle"></i>
+                                </div>
+                          </li>
+                          <li class="category-types__item">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Check this custom checkbox</label>
+                              </div>
+                              <div class="category-types__help">
+                                <i class="far fa-question-circle"></i>
+                              </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="row">
+          <div class="col-sm-12 ">
+            <form class="dashboard-card">
+              <div class="form-row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="validationTooltipUsername">Username</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend"
+                    required>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    </div>
+                  <div class="invalid-tooltip">
+                    Please choose a unique and valid username.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id=timeline>
+          <h1>A Flexbox Timeline</h1>
+          <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+          <div class="timeline-card-wrapper">
+            <aside class="timeline__nav">
+
+            </aside>
+            <div class="timeline-card timeline-card--step1">
+              <div class="timeline-card__container">
+                <div class="timeline-card__box">
+                    <div class="head">
+                        <div class="number-box">
+                          <i class="fas fa-building"></i>
+                        </div>
+                        <h2><span class="small">Din</span> Virksomhed</h2>
+                      </div>
+                      <div class="body">
+                          <div class="card-category__subcategory">
+                              <header class="card-category__subheader">
+                                  <h3 class="card-category__topic">
+                                      Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                  </h3>
+                              </header>
+                              <ul class="icon-list__list">
+                                  <li class="icon-list__item">
+                                      Levering af service eller vare
+                                  </li>
+                                  <li class="icon-list__item">
+                                      Administration af kundekrav (reklamationer, krav mv.)
+                                  </li>
+                                  <li class="icon-list__item">
+                                      Kundesupport
+                                  </li>
+                                </ul>
+                                <footer class="card-category__subfooter">
+                                  <button type="button" class="btn btn-outline-primary">
+                                    <i class="far fa-edit"></i>
+                                    &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                  </button>
+                                </footer>
+                          </div>
+                      </div>
+                </div>
+              </div>
+              <div class="timeline-card__line"> </div>
+            </div>
+            <div class="timeline-card timeline-card--step1">
+                <div class="timeline-card__container">
+                  <div class="timeline-card__box">
+                      <div class="head">
+                          <div class="number-box">
+                            <span><i class="fas fa-bullseye"></i></span>
+                          </div>
+                          <h2><span class="small"></span>Behandlingsaktiviteter</h2>
+                        </div>
+                        <div class="body">
+                          <div class="card-category__subcategory">
+                            <header class="card-category__subheader">
+                                <h3 class="card-category__topic">
+                                    Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                </h3>
+                            </header>
+                            <ul class="icon-list__list">
+                                <li class="icon-list__item">
+                                    Levering af service eller vare
+                                </li>
+                                <li class="icon-list__item">
+                                    Administration af kundekrav (reklamationer, krav mv.)
+                                </li>
+                                <li class="icon-list__item">
+                                    Kundesupport
+                                </li>
+                              </ul>
+                              <footer class="card-category__subfooter">
+                                <button type="button" class="btn btn-outline-primary">
+                                  <i class="far fa-edit"></i>
+                                  &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                </button>
+                              </footer>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="timeline-card__line"></div>
+              </div>
+              <div class="timeline-card timeline-card--step1">
+                  <div class="timeline-card__container">
+                    <div class="timeline-card__box">
+                        <div class="head">
+                            <div class="number-box">
+                              <span>
+                                  <i class="fas fa-users"></i>
+                              </span>
+                            </div>
+                            <h2><span class="small"></span>Registrerede personer</h2>
+                          </div>
+                          <div class="body">
+                              <div class="card-category__subcategory">
+                                  <header class="card-category__subheader">
+                                    <span class="card-category__subheder-icon">
+                                        <i class="fas fa-bullseye"></i>
+                                    </span>  
+                                    <h3 class="card-category__topic">
+                                          Levering af service eller vare
+                                      </h3>
+                                  </header>
+                                  <ul class="icon-list__list">
+                                      <li class="icon-list__item">
+                                        Ansøgere eller potentielle emner for ansættelse
+                                      </li>
+                                      <li class="icon-list__item">
+                                        Kunder (hvor kunderne er forbrugere eller enkeltmandsvirksomheder)
+                                      </li>
+                                      <li class="icon-list__item">
+                                        Kunders kunder og deres ansatte (eksempelvis til CRM-leverandører)
+                                      </li>
+                                      <li class="icon-list__item">
+                                        Leverandører (hvor leverandørerne er personer eller enkeltmandsvirksomheder)
+                                      </li>
+                                    </ul>
+                                    <footer class="card-category__subfooter">
+                                      <button type="button" class="btn btn-outline-primary">
+                                        <i class="far fa-edit"></i>
+                                        &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                      </button>
+                                    </footer>
+                              </div>
+                              <div class="card-category__subcategory">
+                                  <header class="card-category__subheader">
+                                      <span class="card-category__subheder-icon">
+                                          <i class="fas fa-bullseye"></i>
+                                      </span>
+                                      <h3 class="card-category__topic">
+                                          Brug i direkte markedsføring
+                                      </h3>
+                                  </header>
+                                  <ul class="icon-list__list">
+                                      <li class="icon-list__item">
+                                          Leverandører (hvor leverandørerne er personer eller enkeltmandsvirksomheder)
+                                      </li>
+                                      <li class="icon-list__item">
+                                          Leverandørers ansatte (hvor leverandørerne er virksomheder)
+                                      </li>
+                                    </ul>
+                                    <footer class="card-category__subfooter">
+                                      <button type="button" class="btn btn-outline-primary">
+                                        <i class="far fa-edit"></i>
+                                        &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                      </button>
+                                    </footer>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="timeline-card__line"></div>
+                </div>
+                <div class="timeline-card timeline-card--step1">
+                    <div class="timeline-card__container">
+                      <div class="timeline-card__box">
+                          <div class="head">
+                              <div class="number-box">
+                                <span>
+                                    <i class="fas fa-address-book"></i>
+                                </span>
+                              </div>
+                              <h2><span class="small"></span> Typer af personoplysninger</h2>
+                            </div>
+                            <div class="body">
+                                <div class="card-category__subcategory">
+                                    <header class="card-category__subheader">
+                                        <h3 class="card-category__topic">
+                                            Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                        </h3>
+                                    </header>
+                                    <ul class="icon-list__list">
+                                        <li class="icon-list__item">
+                                            Levering af service eller vare
+                                        </li>
+                                        <li class="icon-list__item">
+                                            Administration af kundekrav (reklamationer, krav mv.)
+                                        </li>
+                                        <li class="icon-list__item">
+                                            Kundesupport
+                                        </li>
+                                      </ul>
+                                      <footer class="card-category__subfooter">
+                                        <button type="button" class="btn btn-outline-primary ">
+                                          <i class="far fa-edit"></i>
+                                          &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                        </button>
+                                      </footer>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="timeline-card__line"></div>
+                  </div>
+                  <div class="timeline-card timeline-card--step1">
+                      <div class="timeline-card__container">
+                        <div class="timeline-card__box">
+                            <div class="head">
+                                <div class="number-box">
+                                  <span>
+                                      <i class="fas fa-cloud-download-alt"></i>
+                                  </span>
+                                </div>
+                                <h2><span class="small">EU/EØS</span>Kategorier af modtagere </h2>
+                              </div>
+                              <div class="body">
+                                  <div class="card-category__subcategory">
+                                      <header class="card-category__subheader">
+                                          <h3 class="card-category__topic">
+                                              Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                          </h3>
+                                      </header>
+                                      <ul class="icon-list__list">
+                                          <li class="icon-list__item">
+                                              Levering af service eller vare
+                                          </li>
+                                          <li class="icon-list__item">
+                                              Administration af kundekrav (reklamationer, krav mv.)
+                                          </li>
+                                          <li class="icon-list__item">
+                                              Kundesupport
+                                          </li>
+                                        </ul>
+                                        <footer class="card-category__subfooter">
+                                          <button type="button" class="btn btn-outline-primary " >
+                                            <i class="far fa-edit"></i>
+                                            &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                          </button>
+                                        </footer>
+                                  </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="timeline-card__line"></div>
+                    </div>
+                    <div class="timeline-card timeline-card--step1">
+                        <div class="timeline-card__container">
+                          <div class="timeline-card__box">
+                              <div class="head">
+                                  <div class="number-box">
+                                    <span>
+                                        <i class="fas fa-cloud-download-alt"></i>
+                                    </span>
+                                  </div>
+                                  <h2><span class="small">tredjelande</span>Kategorier af modtagere</h2>
+                                </div>
+                                <div class="body">
+                                    <div class="card-category__subcategory">
+                                        <header class="card-category__subheader">
+                                            <h3 class="card-category__topic">
+                                                Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                            </h3>
+                                        </header>
+                                        <ul class="icon-list__list">
+                                            <li class="icon-list__item">
+                                                Levering af service eller vare
+                                            </li>
+                                            <li class="icon-list__item">
+                                                Administration af kundekrav (reklamationer, krav mv.)
+                                            </li>
+                                            <li class="icon-list__item">
+                                                Kundesupport
+                                            </li>
+                                          </ul>
+                                          <footer class="card-category__subfooter">
+                                            <button type="button" class="btn btn-outline-primary">
+                                              <i class="far fa-edit"></i>
+                                              &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                            </button>
+                                          </footer>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="timeline-card__line"></div>
+                      </div>
+                      <div class="timeline-card timeline-card--step1">
+                          <div class="timeline-card__container">
+                            <div class="timeline-card__box">
+                                <div class="head">
+                                    <div class="number-box">
+                                      <span>
+                                        <i class="fas fa-lock"></i>
+                                      </span>
+                                    </div>
+                                    <h2><span class="small"></span>Sikkerhed</h2>
+                                  </div>
+                                  <div class="body">
+                                      <div class="card-category__subcategory">
+                                          <header class="card-category__subheader">
+                                              <h3 class="card-category__topic">
+                                                  Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                              </h3>
+                                          </header>
+                                          <ul class="icon-list__list">
+                                              <li class="icon-list__item">
+                                                  Levering af service eller vare
+                                              </li>
+                                              <li class="icon-list__item">
+                                                  Administration af kundekrav (reklamationer, krav mv.)
+                                              </li>
+                                              <li class="icon-list__item">
+                                                  Kundesupport
+                                              </li>
+                                            </ul>
+                                            <footer class="card-category__subfooter">
+                                              <button type="button" class="btn btn-outline-primary">
+                                                <i class="far fa-edit"></i>
+                                                &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                              </button>
+                                            </footer>
+                                      </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="timeline-card__line"></div>
+                        </div>
+                        <div class="timeline-card timeline-card--step1">
+                            <div class="timeline-card__container">
+                              <div class="timeline-card__box">
+                                  <div class="head">
+                                      <div class="number-box">
+                                        <span>
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                      </div>
+                                      <h2><span class="small">tredjelande</span>Databehandlere</h2>
+                                    </div>
+                                    <div class="body">
+                                        <div class="card-category__subcategory">
+                                            <header class="card-category__subheader">
+                                                <h3 class="card-category__topic">
+                                                    Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                                </h3>
+                                            </header>
+                                            <ul class="icon-list__list">
+                                                <li class="icon-list__item">
+                                                    Levering af service eller vare
+                                                </li>
+                                                <li class="icon-list__item">
+                                                    Administration af kundekrav (reklamationer, krav mv.)
+                                                </li>
+                                                <li class="icon-list__item">
+                                                    Kundesupport
+                                                </li>
+                                              </ul>
+                                              <footer class="card-category__subfooter">
+                                                <button type="button" class="btn btn-outline-primary">
+                                                  <i class="far fa-edit"></i>
+                                                  &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                                </button>
+                                              </footer>
+                                        </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="timeline-card__line"></div>
+                          </div>
+                          <div class="timeline-card timeline-card--step1">
+                              <div class="timeline-card__container">
+                                <div class="timeline-card__box">
+                                    <div class="head">
+                                        <div class="number-box">
+                                          <span>
+                                              <i class="fas fa-database"></i>
+                                          </span>
+                                        </div>
+                                        <h2><span class="small">EU/EØS</span>Databehandlere</h2>
+                                      </div>
+                                      <div class="body">
+                                          <div class="card-category__subcategory">
+                                              <header class="card-category__subheader">
+                                                  <h3 class="card-category__topic">
+                                                      Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                                  </h3>
+                                              </header>
+                                              <ul class="icon-list__list">
+                                                  <li class="icon-list__item">
+                                                      Levering af service eller vare
+                                                  </li>
+                                                  <li class="icon-list__item">
+                                                      Administration af kundekrav (reklamationer, krav mv.)
+                                                  </li>
+                                                  <li class="icon-list__item">
+                                                      Kundesupport
+                                                  </li>
+                                                </ul>
+                                                <footer class="card-category__subfooter">
+                                                  <button type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-edit"></i>
+                                                    &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                                  </button>
+                                                </footer>
+                                          </div>
+                                      </div>
+                                </div>
+                              </div>
+                              <div class="timeline-card__line"></div>
+                            </div>
+                            <div class="timeline-card timeline-card--step1">
+                                <div class="timeline-card__container">
+                                  <div class="timeline-card__box">
+                                      <div class="head">
+                                          <div class="number-box">
+                                            <span>
+                                                <i class="fas fa-database"></i>
+                                            </span>
+                                          </div>
+                                          <h2><span class="small"></span>Dataansvarlige, som virksomheden er databehandler for</h2>
+                                        </div>
+                                        <div class="body">
+                                            <div class="card-category__subcategory">
+                                                <header class="card-category__subheader">
+                                                    <h3 class="card-category__topic">
+                                                        Her oplistes de formål, som virksomheden forfølger med behandlingen af de omfattede persondata. Læs mere om formål under Hjælp & Support.
+                                                    </h3>
+                                                </header>
+                                                <ul class="icon-list__list">
+                                                    <li class="icon-list__item">
+                                                        Levering af service eller vare
+                                                    </li>
+                                                    <li class="icon-list__item">
+                                                        Administration af kundekrav (reklamationer, krav mv.)
+                                                    </li>
+                                                    <li class="icon-list__item">
+                                                        Kundesupport
+                                                    </li>
+                                                  </ul>
+                                                  <footer class="card-category__subfooter">
+                                                    <button type="button" class="btn btn-outline-primary">
+                                                      <i class="far fa-edit"></i>
+                                                      &nbsp;Rediger " Rediger "Behandlingsaktiviteter"
+                                                    </button>
+                                                  </footer>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="timeline-card__line"></div>
+                              </div>
+                              <div class="timeline-card timeline-card--step2">
+                                  <div class="timeline-card__container">
+                                    <div class="timeline-card__box--disabled">
+                                        <div class="head--disabled">
+                                            <div class="number-box">
+                                              <span>
+                                                  <i class="fas fa-database"></i>
+                                              </span>
+                                            </div>
+                                            <h2><span class="small"></span>Dataansvarlige, som virksomheden er databehandler for</h2>
+                                          </div>
+                                          <div class="body--disabled">
+                                              <div class="timeline-card__disabled">
+                                                  <h3>Ikke tilgængelig nu</h3>
+                                              </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <div class="timeline-card__line"></div>
+                                </div>
+          </div>
+        </section>
+    </div>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-muted">
+    <div class="container">
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  </body>
+</html>

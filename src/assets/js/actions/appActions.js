@@ -7,3 +7,12 @@ export function toggleSelectAction(toggleState) {
     }
   }
 }
+export function scrollByAction(scrollState) {
+  return {
+    detail: {
+      type: "SCROLLBY",
+      scrollBy: scrollState,
+      reducer: "scrollByReducer"
+    }
+  }
+}
