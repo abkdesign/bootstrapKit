@@ -100,6 +100,13 @@ body {
   font-family: Roboto;
 } */
 .timelineSidebar{
+  position: relative;
+  @include e(inner){
+    position: relative;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+  }
   @include e(navbar){
     width: 100%;
   }
@@ -111,12 +118,11 @@ body {
 .timeline__nav{
   float: left;
   width:100%;
-  color: #ce8888;
   will-change: min-height;
-  background: pink;
+  margin-top:160px;
 }
 .timeline-header{
-  
+  position: relative;
   h1 {
     text-align: left;
     font-size: rem(32px);
@@ -133,7 +139,7 @@ body {
   @include e(inner){
     z-index: $zindex-timelineHeader;
     background:$theme-body;
-    padding: em(35px) em(0px);
+    padding: em(35px) em(0px) em(15px) em(0px);
   }
   @include e(item){
     margin-left: 10px;
@@ -141,7 +147,7 @@ body {
   }
 }
 #timeline {
-  padding: 115px 0;
+  padding: 90px 0;
   //background: $background;
   border-top: $border;
   //border-bottom: $border;
@@ -186,6 +192,7 @@ body {
       font-size: rem(24px);
       color: #9e9e9e;
       margin: 40px;
+      margin-left: 0px;
     }
     @include e(container){
       
@@ -199,7 +206,7 @@ body {
       box-shadow: $box-shadow;
       @include m(disabled){
         background-color: $gray-200;
-        margin-left: 45px;
+        //margin-left: 45px;
         box-shadow: $box-shadow;
       }
     }

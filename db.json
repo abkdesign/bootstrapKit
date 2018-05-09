@@ -1,494 +1,497 @@
 {
-    "Document":{
-        "DocTypeID": 2333,
-        "Title": "Databehandleraftale IT leverandører",
+  "Document": {
+    "DocTypeID": 2332,
+    "Title": "Databehandleraftale IT leverandører",
+    "Description": "Det her er en beskrivelse",
+    "PicturePath": "",
+    "ThirdPartyMarkQuestions": "",
+    "page": 0,
+    "steps": [
+      {
+        "UmbStepId": 3022,
+        "Title": "Organisatorisk sikkerhed",
         "Description": "",
-        "PicturePath": null,
-        "ThirdPartyMarkQuestions": false,
-        "Steps": [
-            {
-                "UmbStepId": 3022,
-                "Title": "Organisatorisk sikkerhed",
-                "Description": "",
-                "Questions": [
-                    {
-                        "Options": [],
-                        "Rules": [
-                            {
-                                "RuleUmbId": 3079,
-                                "RefUmbId": 3072,
-                                "Enable": true
-                            }
-                        ],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 3071,
-                        "QuestionTitle": "Sæt kryds her, hvis I bliver it-revideret og får udarbejdet it-revisionserklæring(er).",
-                        "HelpText": "Det kan eksempelvis være ISO 27001, ISAE 3000 eller lignende certificerings- og revisionsstandard.",
-                        "Type": "CheckBox",
-                        "Value": "",
-                        "Checked": false,
-                        "Disabled": true
-                    },
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 252228,
-                                "Name": "Nej",
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }, {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 252229,
-                                "Name": "ja",
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 307231,
-                        "QuestionTitle": "Ja/nej",
-                        "HelpText": "Det kan eksempelvis være ISO 27001, ISAE 3000 eller lignende certificerings- og revisionsstandard.",
-                        "Type": "RadioBtn",
-                        "Value": "",
-                        "Checked": false,
-                        "Disabled": false
-                    },
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 2528,
-                                "Name": "Ingen oplysninger om rent private forhold",
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 2529,
-                                "Name": "Oplysninger om strafbare forhold",
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 2530,
-                                "Name": "Oplysninger om væsentlige sociale problemer",
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [
-                                    {
-                                        "RuleUmbId": 2533,
-                                        "RefUmbId": 2532,
-                                        "Enable": true
-                                    }
-                                ],
-                                "UmbOptionId": 2531,
-                                "Name": "Oplysninger om andre rent private forhold end nævnt ovenfor"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": true,
-                        "Enabled": true,
-                        "UmbQuestionId": 2527,
-                        "QuestionTitle": "Sæt kryds ved de oplysninger om rent private forhold, som Leverandøren eventuelt kommer til at behandle som databehandler for Kommunen",
-                        "HelpText": "",
-                        "Type": "dropdown",
-                        "Value": ""
-                    },
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3073,
-                                "Name": "ISAE 3000",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3074,
-                                "Name": "ISAE 3402 type I",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3075,
-                                "Name": "ISAE 3402 type II",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3076,
-                                "Name": "ISO 27001",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3077,
-                                "Name": "ISO 27017",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3078,
-                                "Name": "ISO 27018",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": true,
-                        "Enabled": false,
-                        "UmbQuestionId": 3072,
-                        "QuestionTitle": "Vælg den eller de it-revisionsstandarder, som I anvender.",
-                        "HelpText": "",
-                        "Type": "Multiple",
-                        "Value": "",
-                        "Checked": false,
-                        "Disabled": true,
-                        "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                    },
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3081,
-                                "Name": "Alle medarbejdere er underlagt fortrolighedsforpligtelse, der gælder for alle behandlede personodata.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3082,
-                                "Name": "Medarbejdernes adgang til persondata i virksomhedens systemer er begrænset, sådan at det kun er de relevante medarbejdere, der har adgang til de relevante persondata.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3083,
-                                "Name": "Medarbejdere med adgang til følsomme data eller kritiske it-systemer er sikkerhedsclearet inden ansættelse.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3084,
-                                "Name": "Medarbejderes behandling af persondata logges og kan kontrolleres efter behov.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3085,
-                                "Name": "Virksomheden har en dokumenteret procesbeskrivelse for databrud.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3087,
-                                "Name": "Virksomheden har en it-sikkerhedspolitik.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3088,
-                                "Name": "Virksomheden har en fast proces, der sikrer, at der ved reparation, service og kassation af hardware sørges for sletning eller fortsat fortrolighed vedrørende persondata på det berørte hardware.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 3080,
-                        "QuestionTitle": "Sæt kryds ved de etablerede organisatoriske sikkerhedsforanstaltninger. ",
-                        "HelpText": "Sæt gerne flere krydser.",
-                        "Type": "Multiple",
-                        "Value": "",
-                        "Checked": false
-                    },
-                    {
-                        "Options": [],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 3100,
-                        "QuestionTitle": "Hvis din virksomhed har etableret andre organisatoriske sikkerhedsforanstaltninger, kan du indsætte beskrivelse her.",
-                        "HelpText": "",
-                        "Type": "TextArea",
-                        "Value": "",
-                        "Checked": false
-                    },
-                    {
-                        "Options": [],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 33100,
-                        "QuestionTitle": "Hvis din virksomhed er i Danmark",
-                        "HelpText": "",
-                        "Type": "TextField",
-                        "Value": "",
-                        "Checked": false
-                    }
-                    
-                ]
-            },
-            {
-                "UmbStepId": 3023,
-                "Title": "Teknisk og logisk sikkerhed",
-                "Description": "",
-                "Questions": [
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3090,
-                                "Name": "Logisk adgangskontrol med brugernavn og adgangskode eller anden entydig autorisation",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3091,
-                                "Name": "Regelmæssig backup (enten egen eller hos leverandør)",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3092,
-                                "Name": "Personoplysninger krypteres i systemer og/eller på opbevaringsmedier",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3093,
-                                "Name": "Delvis kryptering af personsoplysninger i systemer og/eller på opbevaringsmedier",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3094,
-                                "Name": "Pseudonymisering af personoplysninger (personoplysningerne kan ikke længere henføres til en person uden hjælpemidler eller andre data)",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3095,
-                                "Name": "Firewall, som opdateres jævnligt",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3096,
-                                "Name": "Anti-virus program(mer), som opdateres jævnligt",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3097,
-                                "Name": "Virksomhedens website(s) anvender HTTPS (Hyper Text Transfer Protocol Secure), så alt kommunikation på det åbne internt er krypteret peer-to-peer",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3098,
-                                "Name": "Logning og kontrol af uautoriserede eller gentagne mislykkede forsøg på log-in",
-                                "Enabled": true,
-                                "Checked": false,
-                                "Disabled": true,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": true,
-                        "Enabled": true,
-                        "UmbQuestionId": 3086,
-                        "QuestionTitle": "Sæt kryds ved de tekniske og logiske etablerede sikkerhedsforanstaltninger.",
-                        "HelpText": "",
-                        "Type": "Multiple",
-                        "Value": "",
-                        "Checked": false
-                    },
-                    {
-                        "Options": [],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 3101,
-                        "QuestionTitle": "Hvis din virksomhed har etableret andre tekniske eller logiske sikkerhedsforanstaltninger, kan du indsætte beskrivelse her.",
-                        "HelpText": "",
-                        "Type": "TextArea",
-                        "Value": "",
-                        "Checked": false
-                    }
-                ]
-            },
-            {
-                "UmbStepId": 3024,
-                "Title": "Fysisk sikkerhed",
-                "Description": "",
-                "Questions": [
-                    {
-                        "Options": [
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3104,
-                                "Name": "Virksomhedens udstyr (herunder PC\u0027er, eventuelle servere mv.) er sikret bag låste døre.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3105,
-                                "Name": "Overvågning (video eller billeder) af virksomhedens lokaler og faciliteter eller adgangsveje.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3106,
-                                "Name": "Alarmsystem til at opdage og forhindre indbrud.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3107,
-                                "Name": "Brandalarm og røgdetektorer",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            },
-                            {
-                                "Dependencies": [],
-                                "Rules": [],
-                                "UmbOptionId": 3108,
-                                "Name": "Kontrolproces eller -system til kontrol med besøgendes identitet.",
-                                "Enabled": true,
-                                "Checked": false,
-                                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
-                            }
-                        ],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": true,
-                        "Enabled": true,
-                        "UmbQuestionId": 3102,
-                        "QuestionTitle": "Sær kryds ved de etablerede fysiske sikkerhedsforanstaltninger. ",
-                        "HelpText": "",
-                        "Type": "Multiple",
-                        "Value": "",
-                        "Checked": false
-                    },
-                    {
-                        "Options": [],
-                        "Rules": [],
-                        "Dependencies": [],
-                        "Required": false,
-                        "Enabled": true,
-                        "UmbQuestionId": 3109,
-                        "QuestionTitle": "Hvis din virksomhed har etableret andre fysiske sikkerhedsforanstaltninger, kan du beskrive dem herunder. ",
-                        "HelpText": "",
-                        "Type": "TextArea",
-                        "Value": "",
-                        "Checked": false,
-                        "Disabled": true
-                    }
-                ]
-            }
+        "Questions": [
+          {
+            "Options": [],
+            "Rules": [
+              {
+                "RuleUmbId": 3079,
+                "RefUmbId": 3072,
+                "Enable": true
+              }
+            ],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 3071,
+            "QuestionTitle": "Sæt kryds her, hvis I bliver it-revideret og får udarbejdet it-revisionserklæring(er).",
+            "HelpText": "Det kan eksempelvis være ISO 27001, ISAE 3000 eller lignende certificerings- og revisionsstandard.",
+            "Type": "CheckBox",
+            "Value": "",
+            "Checked": false,
+            "Disabled": true
+          },
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 252228,
+                "Name": "Nej",
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 252229,
+                "Name": "ja",
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 307231,
+            "QuestionTitle": "Ja/nej",
+            "HelpText": "Det kan eksempelvis være ISO 27001, ISAE 3000 eller lignende certificerings- og revisionsstandard.",
+            "Type": "RadioBtn",
+            "Value": "",
+            "Checked": false,
+            "Disabled": false
+          },
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 2528,
+                "Name": "Ingen oplysninger om rent private forhold",
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 2529,
+                "Name": "Oplysninger om strafbare forhold",
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 2530,
+                "Name": "Oplysninger om væsentlige sociale problemer",
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [
+                  {
+                    "RuleUmbId": 2533,
+                    "RefUmbId": 2532,
+                    "Enable": true
+                  }
+                ],
+                "UmbOptionId": 2531,
+                "Name": "Oplysninger om andre rent private forhold end nævnt ovenfor"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": true,
+            "Enabled": true,
+            "UmbQuestionId": 2527,
+            "QuestionTitle": "Sæt kryds ved de oplysninger om rent private forhold, som Leverandøren eventuelt kommer til at behandle som databehandler for Kommunen",
+            "HelpText": "",
+            "Type": "dropdown",
+            "Value": 2529
+          },
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3073,
+                "Name": "ISAE 3000",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3074,
+                "Name": "ISAE 3402 type I",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3075,
+                "Name": "ISAE 3402 type II",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3076,
+                "Name": "ISO 27001",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3077,
+                "Name": "ISO 27017",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3078,
+                "Name": "ISO 27018",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": true,
+            "Enabled": false,
+            "UmbQuestionId": 3072,
+            "QuestionTitle": "Vælg den eller de it-revisionsstandarder, som I anvender.",
+            "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh",
+            "Type": "Multiple",
+            "Value": "",
+            "Checked": false,
+            "Disabled": true
+          },
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3081,
+                "Name": "Alle medarbejdere er underlagt fortrolighedsforpligtelse, der gælder for alle behandlede personodata.",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3082,
+                "Name": "Medarbejdernes adgang til persondata i virksomhedens systemer er begrænset, sådan at det kun er de relevante medarbejdere, der har adgang til de relevante persondata.",
+                "Enabled": true,
+                "Checked": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3083,
+                "Name": "Medarbejdere med adgang til følsomme data eller kritiske it-systemer er sikkerhedsclearet inden ansættelse.",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3084,
+                "Name": "Medarbejderes behandling af persondata logges og kan kontrolleres efter behov.",
+                "Enabled": true,
+                "Checked": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3085,
+                "Name": "Virksomheden har en dokumenteret procesbeskrivelse for databrud.",
+                "Enabled": true,
+                "Checked": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3087,
+                "Name": "Virksomheden har en it-sikkerhedspolitik.",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3088,
+                "Name": "Virksomheden har en fast proces, der sikrer, at der ved reparation, service og kassation af hardware sørges for sletning eller fortsat fortrolighed vedrørende persondata på det berørte hardware.",
+                "Enabled": true,
+                "Checked": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 3080,
+            "QuestionTitle": "Sæt kryds ved de etablerede organisatoriske sikkerhedsforanstaltninger. ",
+            "HelpText": "Sæt gerne flere krydser.",
+            "Type": "Multiple",
+            "Value": "",
+            "Checked": false
+          },
+          {
+            "Options": [],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 3100,
+            "QuestionTitle": "Hvis din virksomhed har etableret andre organisatoriske sikkerhedsforanstaltninger, kan du indsætte beskrivelse her.",
+            "HelpText": "",
+            "Type": "TextArea",
+            "Value": "",
+            "Checked": false
+          },
+          {
+            "Options": [],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 33100,
+            "QuestionTitle": "Hvis din virksomhed er i Danmark",
+            "HelpText": "",
+            "Type": "TextField",
+            "Value": "",
+            "Checked": false
+          }
         ]
-    }
-    
+      },
+      {
+        "UmbStepId": 3023,
+        "Title": "Teknisk og logisk sikkerhed",
+        "Description": "",
+        "Questions": [
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3090,
+                "Name": "Logisk adgangskontrol med brugernavn og adgangskode eller anden entydig autorisation",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3091,
+                "Name": "Regelmæssig backup (enten egen eller hos leverandør)",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3092,
+                "Name": "Personoplysninger krypteres i systemer og/eller på opbevaringsmedier",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3093,
+                "Name": "Delvis kryptering af personsoplysninger i systemer og/eller på opbevaringsmedier",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3094,
+                "Name": "Pseudonymisering af personoplysninger (personoplysningerne kan ikke længere henføres til en person uden hjælpemidler eller andre data)",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3095,
+                "Name": "Firewall, som opdateres jævnligt",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3096,
+                "Name": "Anti-virus program(mer), som opdateres jævnligt",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3097,
+                "Name": "Virksomhedens website(s) anvender HTTPS (Hyper Text Transfer Protocol Secure), så alt kommunikation på det åbne internt er krypteret peer-to-peer",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3098,
+                "Name": "Logning og kontrol af uautoriserede eller gentagne mislykkede forsøg på log-in",
+                "Enabled": true,
+                "Checked": false,
+                "Disabled": true,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": true,
+            "Enabled": true,
+            "UmbQuestionId": 3086,
+            "QuestionTitle": "Sæt kryds ved de tekniske og logiske etablerede sikkerhedsforanstaltninger.",
+            "HelpText": "",
+            "Type": "Multiple",
+            "Value": "",
+            "Checked": false
+          },
+          {
+            "Options": [],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 3101,
+            "QuestionTitle": "Hvis din virksomhed har etableret andre tekniske eller logiske sikkerhedsforanstaltninger, kan du indsætte beskrivelse her.",
+            "HelpText": "",
+            "Type": "TextArea",
+            "Value": "",
+            "Checked": false
+          }
+        ]
+      },
+      {
+        "UmbStepId": 3024,
+        "Title": "Fysisk sikkerhed",
+        "Description": "",
+        "Questions": [
+          {
+            "Options": [
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3104,
+                "Name": "Virksomhedens udstyr (herunder PC'er, eventuelle servere mv.) er sikret bag låste døre.",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3105,
+                "Name": "Overvågning (video eller billeder) af virksomhedens lokaler og faciliteter eller adgangsveje.",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3106,
+                "Name": "Alarmsystem til at opdage og forhindre indbrud.",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3107,
+                "Name": "Brandalarm og røgdetektorer",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              },
+              {
+                "Dependencies": [],
+                "Rules": [],
+                "UmbOptionId": 3108,
+                "Name": "Kontrolproces eller -system til kontrol med besøgendes identitet.",
+                "Enabled": true,
+                "Checked": false,
+                "HelpText": "Dette er en hjælpe tekst A fgh fgh fgh"
+              }
+            ],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": true,
+            "Enabled": true,
+            "UmbQuestionId": 3102,
+            "QuestionTitle": "Sær kryds ved de etablerede fysiske sikkerhedsforanstaltninger. ",
+            "HelpText": "",
+            "Type": "Multiple",
+            "Value": "",
+            "Checked": false
+          },
+          {
+            "Options": [],
+            "Rules": [],
+            "Dependencies": [],
+            "Required": false,
+            "Enabled": true,
+            "UmbQuestionId": 3109,
+            "QuestionTitle": "Hvis din virksomhed har etableret andre fysiske sikkerhedsforanstaltninger, kan du beskrive dem herunder. ",
+            "HelpText": "",
+            "Type": "TextArea",
+            "Value": "",
+            "Checked": false,
+            "Disabled": true
+          }
+        ]
+      }
+    ],
+    "sharemode": 0,
+    "saveEnabled": false,
+    "rulesChecked": [],
+    "lastOption": []
+  }
 }

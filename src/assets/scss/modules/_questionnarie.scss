@@ -1,3 +1,7 @@
+.questionnarie{
+    min-height: 100vh;
+    width: 100%;
+}
 .#{$themeVar}-questionnarie-container{
     display: flex;
     flex-direction: column;
@@ -37,3 +41,4 @@
       margin-bottom: 25px;
   }
   .Select-menu-outer { position: relative !important}
+ 

@@ -76,7 +76,7 @@ module.exports = env => {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['babel-preset-es2015', 'react'],
+						presets: ['babel-preset-es2015'],
 						plugins: ['babel-plugin-transform-object-assign','babel-plugin-transform-class-properties','babel-plugin-transform-object-rest-spread']
 					}
 				}

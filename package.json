@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --config webpack.config.js --env.NODE_ENV=development",
     "start:dev": "webpack-dev-server --env.NODE_ENV=local",
-    "build:prod": "webpack -p --config webpack.prod.js --env.NODE_ENV=production",
+    "build:prod": "webpack --config webpack.prod.js --env.NODE_ENV=production",
     "dev-server": "json-server -p 8081 db.json",
     "start-all": "concurrently \"npm run dev-server\" \"npm run start\"",
     "test": "jest",

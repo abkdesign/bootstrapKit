@@ -26,7 +26,7 @@ const commonCunk = new webpack.optimize.CommonsChunkPlugin({
 module.exports = env => {
 	return{
 		entry: {
-			vendor: ['babel-polyfill','lodash','bootstrap'],
+			vendor: ['babel-polyfill','bootstrap'],
 			app: './src/index.js'
 		},
 		output: {
@@ -56,11 +56,11 @@ module.exports = env => {
 			},
 			{
 				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
+				exclude: /(bower_components)/,
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['babel-preset-es2015', 'react'],
+						presets: ['babel-preset-es2015','env'],
 						plugins: ['babel-plugin-transform-object-assign','babel-plugin-transform-class-properties','babel-plugin-transform-object-rest-spread']
 					}
 				}

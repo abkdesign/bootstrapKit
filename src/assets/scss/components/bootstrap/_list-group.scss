@@ -21,6 +21,8 @@
   width: 100%; // For `<button>`s (anchors become 100% by default though)
   color: $list-group-action-color;
   text-align: inherit; // For `<button>`s (anchors inherit)
+  word-break: break-all;
+
 
   // Hover state
   @include hover-focus {
@@ -42,12 +44,20 @@
 
 .list-group-item {
   position: relative;
-  display: block;
-  padding: $list-group-item-padding-y $list-group-item-padding-x;
+  display: flex;
+  align-items: center;
+  padding: em(8px) em(20px);
+  //padding: $list-group-item-padding-y $list-group-item-padding-x;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -$list-group-border-width;
   background-color: $list-group-bg;
   border: $list-group-border-width solid $list-group-border-color;
+  font-size: rem(14px);
+  svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
 
   &:first-child {
     @include border-top-radius($list-group-border-radius);
