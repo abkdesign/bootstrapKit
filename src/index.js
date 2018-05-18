@@ -14,18 +14,18 @@ $(function() {
 });
 
 $(document).ready(function($) {
-  $('a[href^="#"]').bind('click.list-group-item', function(e) {
+  $('.list-group-item').on('click', function(e) {
       e.preventDefault();
-      
       // Get the current target hash
       var target = this.hash;
-      
-      // Animate the scroll bar action so its smooth instead of a hard jump
-      $('html, body').stop().animate({
+      if(target){
+        // Animate the scroll bar action so its smooth instead of a hard jump
+        $('html, body').stop().animate({
           'scrollTop' : $(target).offset().top - 210
-      }, 100, 'swing', function() {
+        }, 100, 'swing', function() {
           //window.location.hash = target;
-      });
+        });
+      }
   });
 });
 
@@ -320,7 +320,7 @@ function getBool(val) {
 function getRulesFromSelectedFieldID(fieldid) {
   var rules = [];
 
-  jQuery.each(jsonrules, function() {
+  $.each(jsonrules, function() {
     if (this.QuestionFieldId == fieldid) {
       rules.push(this);
     }
@@ -331,7 +331,7 @@ function getRulesFromSelectedFieldID(fieldid) {
 
 function getRulesFromSelectedQuestionID(questionid) {
   var rules = [];
-  jQuery.each(jsonrules, function() {
+  $.each(jsonrules, function() {
     if (this.QuestionUmbId == questionid) rules.push(this);
   });
 

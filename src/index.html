@@ -238,7 +238,8 @@
                   <div id="list-item-2" class="timeline-card timeline-card--step1">
                     <div class="timeline-card__container">
                       <div class="timeline-card__box">
-                        <div class="head">
+                        <div class="head" id="timeline-header1" data-toggle="collapse" data-target="#timeline-card1" aria-expanded="true" aria-controls="#timeline-card1">
+                         
                           <div class="number-box">
                             <span>
                               <i class="fas fa-bullseye"></i>
@@ -246,8 +247,11 @@
                           </div>
                           <h2>
                             <span class="small"></span>Behandlingsaktiviteter</h2>
+                            <span class="head-arrow">
+                              <i  class="fas fa-sort-down"></i>
+                          </span>
                         </div>
-                        <div class="body">
+                        <div class="body"  id="timeline-card1" class="collapse show" aria-labelledby="timeline-header1" data-parent="list-item-2">
                           <div class="card-category__subcategory">
                             <header class="card-category__subheader">
                               <h3 class="card-category__topic">

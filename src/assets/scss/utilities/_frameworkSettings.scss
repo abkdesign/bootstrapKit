@@ -488,6 +488,7 @@ $dropdown-header-color:             $gray-600 ;
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
 
+$zindex-timelineHeader:             990 !default;
 $zindex-dropdown:                   1000 ;
 $zindex-sticky:                     1020 ;
 $zindex-fixed:                      1030 ;
@@ -495,7 +496,6 @@ $zindex-modal-backdrop:             1040 ;
 $zindex-modal:                      1050 ;
 $zindex-popover:                    1060 ;
 $zindex-tooltip:                    1070 ;
-
 // Navs
 
 $nav-link-padding-y:                .5rem ;

@@ -99,6 +99,23 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 body {
   font-family: Roboto;
 } */
+.head-arrow{
+  font-size: 20px; 
+  display: flex;
+  align-content: 
+  flex-end;flex: 
+  auto;flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+  transition: .3s transform ease-in-out;
+}
+.collapsed{
+  .head-arrow{
+   svg{
+    transform: rotate(-90deg);
+   }
+  }
+}
 .timelineSidebar{
   position: relative;
   @include e(inner){
@@ -178,6 +195,7 @@ body {
       }
     } */
   }
+  
   .timeline-card {
     position: relative;
     display: flex;
@@ -185,6 +203,9 @@ body {
     margin: 10px auto 80px;
     max-width: 94%;
     z-index: 2;
+    &:first-of-type{
+      margin-top: 55px;
+    }
     @include e(disabled){
       display: flex;
       justify-content: center;
